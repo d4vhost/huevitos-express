@@ -102,9 +102,7 @@ export default function Proceso() {
       {pasos.map((paso, i) => (
         <section key={i} className={i % 2 === 0 ? "section-gray" : "section-white"}>
           <div className="container-wp">
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
+            <div className="grid-2" style={{
               gap: '64px',
               alignItems: 'center',
               direction: i % 2 === 1 ? 'rtl' : 'ltr' as 'rtl' | 'ltr'

@@ -75,12 +75,7 @@ export default function Calidad() {
       {etapas.map((etapa, i) => (
         <section key={i} className={i % 2 === 0 ? "section-gray" : "section-white"}>
           <div className="container-wp">
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: i % 2 === 0 ? '1fr 2fr' : '2fr 1fr',
-              gap: '64px',
-              alignItems: 'center'
-            }}>
+            <div className={i % 2 === 0 ? "grid-1-2" : "grid-2-1"} style={{ gap: '64px', alignItems: 'center' }}>
               {i % 2 === 0 ? (
                 <>
                   {/* Número grande (izquierda) */}
@@ -103,7 +98,7 @@ export default function Calidad() {
                     <h2 className="section-title" style={{ marginTop: '12px' }}>{etapa.titulo}</h2>
                     <div className="section-divider"></div>
                     <p style={{ color: 'var(--fg-muted)', lineHeight: 1.75, marginBottom: '24px' }}>{etapa.desc}</p>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                    <ul className="grid-2" style={{ listStyle: 'none', padding: 0, margin: 0, gap: '10px' }}>
                       {etapa.detalle.map((d, j) => (
                         <li key={j} style={{ display: 'flex', gap: '10px', alignItems: 'center', fontSize: '0.875rem', color: 'var(--fg-muted)' }}>
                           <i style={{ color: 'var(--brand-green)', flexShrink: 0, display: 'flex' }}>
@@ -123,7 +118,7 @@ export default function Calidad() {
                     <h2 className="section-title" style={{ marginTop: '12px' }}>{etapa.titulo}</h2>
                     <div className="section-divider"></div>
                     <p style={{ color: 'var(--fg-muted)', lineHeight: 1.75, marginBottom: '24px' }}>{etapa.desc}</p>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                    <ul className="grid-2" style={{ listStyle: 'none', padding: 0, margin: 0, gap: '10px' }}>
                       {etapa.detalle.map((d, j) => (
                         <li key={j} style={{ display: 'flex', gap: '10px', alignItems: 'center', fontSize: '0.875rem', color: 'var(--fg-muted)' }}>
                       <i style={{ color: 'var(--brand-green)', flexShrink: 0, display: 'flex' }}>

@@ -45,7 +45,7 @@ export default function Contacto() {
       {/* CANALES RÁPIDOS */}
       <section className="section-gray">
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }}>
+          <div className="grid-4" style={{ gap: '24px' }}>
             {[
               { icon: <MessageCircle size={24} color="#25D366" />, titulo: 'WhatsApp', valor: '+593 99 999 9999', sub: 'Respuesta rápida', link: 'https://wa.me/593999999999' },
               { icon: <Mail size={24} color="var(--brand-green)" />, titulo: 'Correo', valor: 'info@huevitosexpress.com', sub: 'Respuesta en 24h', link: 'mailto:info@huevitosexpress.com' },
@@ -72,7 +72,7 @@ export default function Contacto() {
       {/* FORMULARIO + INFO */}
       <section className="section-white">
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '64px', alignItems: 'start' }}>
+          <div className="grid-2-1" style={{ gap: '64px', alignItems: 'start' }}>
 
             <div>
               <span className="section-eyebrow">Envíanos un mensaje</span>
@@ -95,7 +95,7 @@ export default function Contacto() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                  <div className="grid-2" style={{ gap: '20px' }}>
                     <div>
                       <label className="label-wp" htmlFor="nombre">Nombre completo *</label>
                       <input className="input-wp" type="text" id="nombre" name="nombre" required placeholder="Tu nombre" value={form.nombre} onChange={handleChange} />
@@ -105,7 +105,7 @@ export default function Contacto() {
                       <input className="input-wp" type="text" id="empresa" name="empresa" placeholder="Opcional" value={form.empresa} onChange={handleChange} />
                     </div>
                   </div>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                  <div className="grid-2" style={{ gap: '20px' }}>
                     <div>
                       <label className="label-wp" htmlFor="telefono">Teléfono / WhatsApp *</label>
                       <input className="input-wp" type="tel" id="telefono" name="telefono" required placeholder="+593 99..." value={form.telefono} onChange={handleChange} />
@@ -201,7 +201,7 @@ export default function Contacto() {
               title="Ubicación Guayaquil"
             ></iframe>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', marginTop: '24px' }}>
+          <div className="grid-3" style={{ gap: '24px', marginTop: '24px' }}>
             {[
               { icon: <MapPin size={20} color="var(--brand-green)" />, titulo: 'Dirección', desc: 'Guayaquil, Ecuador' },
               { icon: <Clock size={20} color="var(--brand-green)" />, titulo: 'Horarios', desc: 'Lunes a Sábado: 7:00 AM – 6:00 PM' },

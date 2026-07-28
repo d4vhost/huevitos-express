@@ -9,7 +9,7 @@ export default function Footer() {
       {/* Main Footer */}
       <div style={{ padding: '64px 0 48px' }}>
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '40px' }}>
+          <div className="grid-4" style={{ gap: '40px' }}>
 
             {/* Col 1 — Brand */}
             <div>

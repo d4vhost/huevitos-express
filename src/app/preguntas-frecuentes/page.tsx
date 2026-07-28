@@ -85,7 +85,7 @@ export default function FAQ() {
       {/* FAQS */}
       <section className="section-gray">
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: '260px 1fr', gap: '56px', alignItems: 'start' }}>
+          <div className="grid-sidebar-left" style={{ gap: '56px', alignItems: 'start' }}>
 
             {/* Sidebar */}
             <div style={{ position: 'sticky', top: '100px' }}>

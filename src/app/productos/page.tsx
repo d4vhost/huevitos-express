@@ -87,7 +87,7 @@ export default function Productos() {
       {/* INTRO */}
       <section className="section-white">
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
+          <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
             <div>
               <span className="section-eyebrow">Nuestro catálogo</span>
               <h2 className="section-title">Presentaciones disponibles</h2>
@@ -109,7 +109,7 @@ export default function Productos() {
                 Consultar precios y disponibilidad
               </a>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+            <div className="grid-2" style={{ gap: '16px' }}>
               {[
                 { icon: <Egg size={36} color="var(--fg)" />, label: 'Seleccionados', sub: 'Uno a uno' },
                 { icon: <Truck size={36} color="var(--fg)" />, label: 'Entrega rápida', sub: 'En Guayaquil' },
@@ -198,7 +198,7 @@ export default function Productos() {
       {/* CONSERVACIÓN */}
       <section className="section-gray">
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
+          <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
             <div>
               <span className="section-eyebrow">Tips de almacenamiento</span>
               <h2 className="section-title">Cómo conservar tus huevos</h2>

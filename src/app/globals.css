@@ -422,13 +422,42 @@ p {
   gap: 24px;
 }
 
+.grid-1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+}
+
+.grid-2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+}
+
+.grid-sidebar-right {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 32px;
+}
+
+.grid-sidebar-left {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 32px;
+}
+
 @media (max-width: 1024px) {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-sidebar-right, .grid-sidebar-left { grid-template-columns: 1fr; }
+  .grid-1-2, .grid-2-1 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4, .grid-1-2, .grid-2-1, .grid-sidebar-right, .grid-sidebar-left { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
-  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .hero-wp { min-height: 60vh; }
   .section-title, .section-title-white { font-size: 1.75rem; }
   .section-white, .section-gray, .section-dark, .section-green { padding: 56px 0; }

@@ -124,7 +124,7 @@ export default function Home() {
           ======================================== */}
       <section className="section-white">
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
+          <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
             <div>
               <span className="section-eyebrow">Quiénes somos</span>
               <h2 className="section-title">Una marca comprometida con la frescura</h2>
@@ -275,7 +275,7 @@ export default function Home() {
           ======================================== */}
       <section className="section-gray">
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '64px', alignItems: 'start' }}>
+          <div className="grid-1-2" style={{ gap: '64px', alignItems: 'start' }}>
             <div>
               <span className="section-eyebrow">FAQ</span>
               <h2 className="section-title">Preguntas frecuentes</h2>

@@ -88,13 +88,13 @@ export default function Blog() {
       {/* BLOG GRID */}
       <section className="section-gray">
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 280px', gap: '48px', alignItems: 'start' }}>
+          <div className="grid-sidebar-right" style={{ gap: '48px', alignItems: 'start' }}>
 
             {/* Artículos */}
             <div>
               {/* Destacado */}
               <div style={{ marginBottom: '48px' }}>
-                <div className="blog-card" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+                <div className="blog-card grid-2">
                   <div style={{ position: 'relative', height: '300px' }}>
                     <Image src={articulos[0].img} alt={articulos[0].titulo} fill style={{ objectFit: 'cover' }} />
                   </div>
@@ -120,7 +120,7 @@ export default function Blog() {
               </div>
 
               {/* Resto de artículos */}
-              <div className="grid-3" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
+              <div className="grid-2">
                 {articulos.slice(1).map((art, i) => (
                   <div key={i} className="blog-card">
                     <div style={{ position: 'relative', height: '180px' }}>

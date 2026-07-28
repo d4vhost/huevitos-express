@@ -201,7 +201,7 @@ export default async function BlogArticulo({ params }: { params: Promise<Params>
       {/* CONTENT */}
       <section className="section-white">
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '64px', alignItems: 'start' }}>
+          <div className="grid-sidebar-right" style={{ gap: '64px', alignItems: 'start' }}>
 
             {/* Artículo */}
             <article style={{

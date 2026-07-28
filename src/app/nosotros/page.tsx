@@ -36,7 +36,7 @@ export default function Nosotros() {
       {/* HISTORIA */}
       <section className="section-white">
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
+          <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
             <div style={{ position: 'relative', height: '440px', border: '4px solid var(--brand-green)' }}>
               <Image
                 src="/hero_huevos.jpg"
@@ -66,7 +66,7 @@ export default function Nosotros() {
       {/* NUESTRA EXPERIENCIA */}
       <section className="section-gray">
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '64px', alignItems: 'center' }}>
+          <div className="grid-2-1" style={{ gap: '64px', alignItems: 'center' }}>
             <div>
               <span className="section-eyebrow">Respaldo familiar</span>
               <h2 className="section-title">Nuestra experiencia en el sector avícola</h2>
@@ -159,7 +159,7 @@ export default function Nosotros() {
       {/* NUESTRO COMPROMISO */}
       <section className="section-dark">
         <div className="container-wp">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
+          <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
             <div>
               <span className="section-eyebrow" style={{ background: 'rgba(247,217,30,0.2)', color: '#F7D91E' }}>Nuestro compromiso</span>
               <h2 className="section-title-white" style={{ marginTop: '12px' }}>Lo que nos impulsa cada día</h2>
