@@ -1,0 +1,704 @@
+@import "tailwindcss";
+@import "bootstrap/dist/css/bootstrap-grid.min.css";
+
+
+
+/* =============================================
+   HUEVITOS EXPRESS — DESIGN SYSTEM
+   Estilo WordPress: bordes cuadrados, bloques definidos
+   ============================================= */
+
+:root {
+  --bg: #FFFFFF;
+  --bg-alt: #F5F5F5;
+  --bg-dark: #1A1A1A;
+  --fg: #1A1A1A;
+  --fg-muted: #555555;
+  --fg-light: #888888;
+  --brand-green: #2D7A2F;
+  --brand-green-dark: #1f5720;
+  --brand-green-light: #3d9e40;
+  --brand-yellow: #F7D91E;
+  --brand-yellow-dark: #d4b800;
+  --brand-red: #C0392B;
+  --border: #DDDDDD;
+  --border-strong: #AAAAAA;
+  --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.16);
+  --radius: 0px; /* WordPress style: square corners */
+  --font: 'Inter', Arial, sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-brand-green: var(--brand-green);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-red: var(--brand-red);
+  --font-sans: var(--font);
+}
+
+/* =============================================
+   BASE STYLES
+   ============================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =============================================
+   TYPOGRAPHY
+   ============================================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--fg);
+}
+
+p {
+  color: var(--fg-muted);
+  line-height: 1.7;
+}
+
+/* =============================================
+   LAYOUT
+   ============================================= */
+.container-wp {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =============================================
+   SECTION STYLES — WordPress blocks
+   ============================================= */
+.section-white {
+  background: var(--bg);
+  padding: 80px 0;
+}
+
+.section-gray {
+  background: var(--bg-alt);
+  padding: 80px 0;
+}
+
+.section-dark {
+  background: var(--bg-dark);
+  color: #fff;
+  padding: 80px 0;
+}
+
+.section-green {
+  background: var(--brand-green);
+  color: #fff;
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--fg);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.section-title-white {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--fg-muted);
+  max-width: 640px;
+  line-height: 1.7;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  background: var(--brand-yellow);
+  color: var(--fg);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 4px 12px;
+  margin-bottom: 16px;
+}
+
+.section-divider {
+  width: 48px;
+  height: 4px;
+  background: var(--brand-green);
+  margin: 16px 0 32px 0;
+}
+
+.section-divider-yellow {
+  width: 48px;
+  height: 4px;
+  background: var(--brand-yellow);
+  margin: 16px 0 32px 0;
+}
+
+/* =============================================
+   CARD STYLES — WordPress style (square)
+   ============================================= */
+.card-wp {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--brand-green);
+  box-shadow: var(--shadow);
+  padding: 32px;
+}
+
+.card-wp:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card-wp-yellow {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--brand-yellow);
+  box-shadow: var(--shadow);
+  padding: 32px;
+}
+
+.card-wp-yellow:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* =============================================
+   BUTTONS
+   ============================================= */
+.btn-primary {
+  display: inline-block;
+  background: var(--brand-green);
+  color: #fff;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 28px;
+  border: 2px solid var(--brand-green);
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background: var(--brand-green-dark);
+  border-color: var(--brand-green-dark);
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: var(--brand-green);
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 28px;
+  border: 2px solid var(--brand-green);
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-secondary:hover {
+  background: var(--brand-green);
+  color: #fff;
+}
+
+.btn-yellow {
+  display: inline-block;
+  background: var(--brand-yellow);
+  color: var(--fg);
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 28px;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.btn-yellow:hover {
+  background: var(--brand-yellow-dark);
+  border-color: var(--brand-yellow-dark);
+}
+
+.btn-white {
+  display: inline-block;
+  background: #fff;
+  color: var(--brand-green);
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 28px;
+  border: 2px solid #fff;
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-white:hover {
+  background: var(--brand-yellow);
+  border-color: var(--brand-yellow);
+  color: var(--fg);
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #fff;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 28px;
+  border: 2px solid #25D366;
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.btn-whatsapp:hover {
+  background: #1daa52;
+  border-color: #1daa52;
+}
+
+/* =============================================
+   HERO SECTION
+   ============================================= */
+.hero-wp {
+  position: relative;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 5px solid var(--brand-yellow);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.35) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-page {
+  background: var(--brand-green);
+  padding: 72px 0 64px;
+  border-bottom: 5px solid var(--brand-yellow);
+}
+
+/* =============================================
+   PROCESS STEPS
+   ============================================= */
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.process-number {
+  width: 56px;
+  height: 56px;
+  background: var(--brand-green);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--brand-yellow);
+  flex-shrink: 0;
+}
+
+/* =============================================
+   FAQ ACCORDION
+   ============================================= */
+.faq-item {
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--brand-green);
+  margin-bottom: 8px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 20px 24px;
+  background: var(--bg);
+  border: none;
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--fg);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.15s;
+}
+
+.faq-question:hover {
+  background: var(--bg-alt);
+}
+
+.faq-answer {
+  padding: 0 24px 20px;
+  color: var(--fg-muted);
+  line-height: 1.7;
+}
+
+/* =============================================
+   GRID UTILITIES
+   ============================================= */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .hero-wp { min-height: 60vh; }
+  .section-title, .section-title-white { font-size: 1.75rem; }
+  .section-white, .section-gray, .section-dark, .section-green { padding: 56px 0; }
+}
+
+/* =============================================
+   HEADER
+   ============================================= */
+.header-wp {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--brand-green);
+  border-bottom: 3px solid var(--brand-yellow);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.nav-link-wp {
+  color: rgba(255,255,255,0.88);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.nav-link-wp:hover {
+  color: var(--brand-yellow);
+  border-bottom-color: var(--brand-yellow);
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer-wp {
+  background: #111111;
+  color: #cccccc;
+  border-top: 5px solid var(--brand-green);
+}
+
+/* =============================================
+   BADGES & TAGS
+   ============================================= */
+.badge-green {
+  display: inline-block;
+  background: var(--brand-green);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+}
+
+.badge-yellow {
+  display: inline-block;
+  background: var(--brand-yellow);
+  color: var(--fg);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+}
+
+/* =============================================
+   ICON BOX
+   ============================================= */
+.icon-box {
+  width: 56px;
+  height: 56px;
+  background: var(--brand-green);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.icon-box-yellow {
+  width: 56px;
+  height: 56px;
+  background: var(--brand-yellow);
+  color: var(--fg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* =============================================
+   FORMS
+   ============================================= */
+.input-wp {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  font-family: var(--font);
+  font-size: 0.95rem;
+  color: var(--fg);
+  background: var(--bg);
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.input-wp:focus {
+  border-color: var(--brand-green);
+  box-shadow: 0 0 0 3px rgba(45, 122, 47, 0.12);
+}
+
+.label-wp {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* =============================================
+   BLOG CARD
+   ============================================= */
+.blog-card {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.blog-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-card-body {
+  padding: 24px;
+  border-top: 3px solid var(--brand-green);
+}
+
+/* =============================================
+   PRODUCT CARD
+   ============================================= */
+.product-card {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.product-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.product-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card-body {
+  padding: 24px;
+  border-top: 4px solid var(--brand-yellow);
+}
+
+/* =============================================
+   CTA STRIP
+   ============================================= */
+.cta-strip {
+  background: var(--brand-green);
+  border-top: 4px solid var(--brand-yellow);
+  border-bottom: 4px solid var(--brand-yellow);
+  padding: 64px 0;
+  text-align: center;
+}
+
+/* =============================================
+   TIMELINE / PROCESS LINE
+   ============================================= */
+.timeline-item {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.timeline-num {
+  width: 48px;
+  height: 48px;
+  background: var(--brand-green);
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 3px solid var(--brand-yellow);
+}
+
+/* Footer link hover */
+.footer-link {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.15s;
+  display: block;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+/* =============================================
+   MOBILE HAMBURGER
+   ============================================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .hamburger { display: flex; }
+  .nav-desktop { display: none; }
+  .nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--brand-green);
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+  .nav-mobile.open {
+    transform: translateX(0);
+  }
+  .nav-mobile .nav-link-wp {
+    font-size: 1.25rem;
+  }
+}
