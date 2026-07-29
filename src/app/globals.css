@@ -1,32 +1,31 @@
 @import "tailwindcss";
-@import "bootstrap/dist/css/bootstrap-grid.min.css";
-
-
 
 /* =============================================
-   HUEVITOS EXPRESS — DESIGN SYSTEM
-   Estilo WordPress: bordes cuadrados, bloques definidos
+   HUEVITOS EXPRESS — DESIGN SYSTEM v2
+   New palette + AOS animations + WordPress blocks
    ============================================= */
 
 :root {
   --bg: #FFFFFF;
-  --bg-alt: #F5F5F5;
+  --bg-alt: #F7F7F5;
   --bg-dark: #1A1A1A;
-  --fg: #1A1A1A;
+  --fg: #333333;
   --fg-muted: #555555;
   --fg-light: #888888;
-  --brand-green: #2D7A2F;
-  --brand-green-dark: #1f5720;
-  --brand-green-light: #3d9e40;
-  --brand-yellow: #F7D91E;
-  --brand-yellow-dark: #d4b800;
-  --brand-red: #C0392B;
-  --border: #DDDDDD;
+  --brand-green: #76BB70;
+  --brand-green-dark: #5a9a54;
+  --brand-yellow: #FFED00;
+  --brand-yellow-dark: #e0d200;
+  --brand-red: #CC0000;
+  --brand-red-dark: #a30000;
+  --brand-orange: #E8955E;
+  --brand-orange-dark: #d07a45;
+  --border: #E0E0E0;
   --border-strong: #AAAAAA;
-  --shadow: 0 2px 8px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
-  --shadow-lg: 0 8px 32px rgba(0,0,0,0.16);
-  --radius: 0px; /* WordPress style: square corners */
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.14);
+  --radius: 0px;
   --font: 'Inter', Arial, sans-serif;
 }
 
@@ -36,6 +35,7 @@
   --color-brand-green: var(--brand-green);
   --color-brand-yellow: var(--brand-yellow);
   --color-brand-red: var(--brand-red);
+  --color-brand-orange: var(--brand-orange);
   --font-sans: var(--font);
 }
 
@@ -88,14 +88,14 @@ p {
 }
 
 /* =============================================
-   SECTION STYLES — WordPress blocks
+   SECTION STYLES
    ============================================= */
 .section-white {
   background: var(--bg);
   padding: 80px 0;
 }
 
-.section-gray {
+.section-alt {
   background: var(--bg-alt);
   padding: 80px 0;
 }
@@ -108,6 +108,12 @@ p {
 
 .section-green {
   background: var(--brand-green);
+  color: #fff;
+  padding: 80px 0;
+}
+
+.section-red {
+  background: var(--brand-red);
   color: #fff;
   padding: 80px 0;
 }
@@ -144,7 +150,19 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 4px 12px;
+  padding: 4px 14px;
+  margin-bottom: 16px;
+}
+
+.section-eyebrow-light {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 4px 14px;
   margin-bottom: 16px;
 }
 
@@ -162,8 +180,15 @@ p {
   margin: 16px 0 32px 0;
 }
 
+.section-divider-red {
+  width: 48px;
+  height: 4px;
+  background: var(--brand-red);
+  margin: 16px 0 32px 0;
+}
+
 /* =============================================
-   CARD STYLES — WordPress style (square)
+   CARD STYLES
    ============================================= */
 .card-wp {
   background: var(--bg);
@@ -171,10 +196,12 @@ p {
   border-top: 4px solid var(--brand-green);
   box-shadow: var(--shadow);
   padding: 32px;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .card-wp:hover {
   box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
 }
 
 .card-wp-yellow {
@@ -183,10 +210,12 @@ p {
   border-top: 4px solid var(--brand-yellow);
   box-shadow: var(--shadow);
   padding: 32px;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .card-wp-yellow:hover {
   box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
 }
 
 /* =============================================
@@ -206,13 +235,14 @@ p {
   border-radius: 0;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.25s, color 0.25s, transform 0.2s;
   white-space: nowrap;
 }
 
 .btn-primary:hover {
   background: var(--brand-green-dark);
   border-color: var(--brand-green-dark);
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
@@ -229,7 +259,7 @@ p {
   border-radius: 0;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.25s, color 0.25s;
   white-space: nowrap;
 }
 
@@ -252,13 +282,38 @@ p {
   border-radius: 0;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.2s;
+  transition: background 0.25s, transform 0.2s;
   white-space: nowrap;
 }
 
 .btn-yellow:hover {
   background: var(--brand-yellow-dark);
   border-color: var(--brand-yellow-dark);
+  transform: translateY(-2px);
+}
+
+.btn-red {
+  display: inline-block;
+  background: var(--brand-red);
+  color: #fff;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 28px;
+  border: 2px solid var(--brand-red);
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.25s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.btn-red:hover {
+  background: var(--brand-red-dark);
+  border-color: var(--brand-red-dark);
+  transform: translateY(-2px);
 }
 
 .btn-white {
@@ -275,7 +330,7 @@ p {
   border-radius: 0;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.25s, color 0.25s;
   white-space: nowrap;
 }
 
@@ -301,7 +356,7 @@ p {
   border-radius: 0;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.2s;
+  transition: background 0.25s;
   white-space: nowrap;
 }
 
@@ -315,17 +370,17 @@ p {
    ============================================= */
 .hero-wp {
   position: relative;
-  min-height: 75vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   overflow: hidden;
-  border-bottom: 5px solid var(--brand-yellow);
+  border-bottom: 6px solid var(--brand-yellow);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.35) 100%);
+  background: linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.3) 100%);
   z-index: 1;
 }
 
@@ -337,7 +392,48 @@ p {
 .hero-page {
   background: var(--brand-green);
   padding: 72px 0 64px;
-  border-bottom: 5px solid var(--brand-yellow);
+  border-bottom: 6px solid var(--brand-yellow);
+}
+
+/* =============================================
+   LOGO STYLES
+   ============================================= */
+.logo-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--brand-yellow);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-circle-lg {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid var(--brand-yellow);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.logo-circle-lg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* =============================================
@@ -372,6 +468,11 @@ p {
   border: 1px solid var(--border);
   border-left: 4px solid var(--brand-green);
   margin-bottom: 8px;
+  transition: box-shadow 0.2s;
+}
+
+.faq-item:hover {
+  box-shadow: var(--shadow);
 }
 
 .faq-question {
@@ -434,33 +535,20 @@ p {
   gap: 32px;
 }
 
-.grid-sidebar-right {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 32px;
-}
-
-.grid-sidebar-left {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 32px;
-}
-
 @media (max-width: 1024px) {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
-  .grid-sidebar-right, .grid-sidebar-left { grid-template-columns: 1fr; }
   .grid-1-2, .grid-2-1 { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
-  .grid-2, .grid-3, .grid-4, .grid-1-2, .grid-2-1, .grid-sidebar-right, .grid-sidebar-left { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .grid-4, .grid-1-2, .grid-2-1 { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
-  .hero-wp { min-height: 60vh; }
+  .hero-wp { min-height: 65vh; }
   .section-title, .section-title-white { font-size: 1.75rem; }
-  .section-white, .section-gray, .section-dark, .section-green { padding: 56px 0; }
+  .section-white, .section-alt, .section-dark, .section-green, .section-red { padding: 56px 0; }
 }
 
 /* =============================================
@@ -471,20 +559,20 @@ p {
   top: 0;
   z-index: 100;
   background: var(--brand-green);
-  border-bottom: 3px solid var(--brand-yellow);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-bottom: 4px solid var(--brand-yellow);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
 .nav-link-wp {
-  color: rgba(255,255,255,0.88);
-  font-size: 0.875rem;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   text-decoration: none;
   padding: 6px 0;
   border-bottom: 2px solid transparent;
-  transition: color 0.15s, border-color 0.15s;
+  transition: color 0.2s, border-color 0.2s;
 }
 
 .nav-link-wp:hover {
@@ -502,7 +590,7 @@ p {
 }
 
 /* =============================================
-   BADGES & TAGS
+   BADGES
    ============================================= */
 .badge-green {
   display: inline-block;
@@ -526,6 +614,17 @@ p {
   padding: 3px 10px;
 }
 
+.badge-red {
+  display: inline-block;
+  background: var(--brand-red);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+}
+
 /* =============================================
    ICON BOX
    ============================================= */
@@ -539,6 +638,11 @@ p {
   justify-content: center;
   font-size: 1.5rem;
   flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.icon-box:hover {
+  transform: scale(1.1);
 }
 
 .icon-box-yellow {
@@ -571,7 +675,7 @@ p {
 
 .input-wp:focus {
   border-color: var(--brand-green);
-  box-shadow: 0 0 0 3px rgba(45, 122, 47, 0.12);
+  box-shadow: 0 0 0 3px rgba(118, 187, 112, 0.15);
 }
 
 .label-wp {
@@ -585,41 +689,18 @@ p {
 }
 
 /* =============================================
-   BLOG CARD
-   ============================================= */
-.blog-card {
-  border: 1px solid var(--border);
-  background: var(--bg);
-  overflow: hidden;
-}
-
-.blog-card:hover {
-  box-shadow: var(--shadow-md);
-}
-
-.blog-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-}
-
-.blog-card-body {
-  padding: 24px;
-  border-top: 3px solid var(--brand-green);
-}
-
-/* =============================================
    PRODUCT CARD
    ============================================= */
 .product-card {
   border: 1px solid var(--border);
   background: var(--bg);
   overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .product-card:hover {
   box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
 }
 
 .product-card img {
@@ -646,7 +727,7 @@ p {
 }
 
 /* =============================================
-   TIMELINE / PROCESS LINE
+   TIMELINE
    ============================================= */
 .timeline-item {
   display: flex;
@@ -669,17 +750,17 @@ p {
   border: 3px solid var(--brand-yellow);
 }
 
-/* Footer link hover */
+/* Footer link */
 .footer-link {
   color: #aaa;
   text-decoration: none;
   font-size: 0.9rem;
-  transition: color 0.15s;
+  transition: color 0.2s;
   display: block;
 }
 
 .footer-link:hover {
-  color: #fff;
+  color: var(--brand-yellow);
 }
 
 /* =============================================
@@ -730,4 +811,21 @@ p {
   .nav-mobile .nav-link-wp {
     font-size: 1.25rem;
   }
+}
+
+/* =============================================
+   ABU SHOWCASE
+   ============================================= */
+.abu-showcase {
+  background: var(--bg-alt);
+  border: 2px solid var(--border);
+  padding: 48px;
+  text-align: center;
+}
+
+.abu-logo-featured {
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto 24px;
+  display: block;
 }

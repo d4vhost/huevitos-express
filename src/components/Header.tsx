@@ -21,27 +21,27 @@ export default function Header() {
 
   return (
     <header className="header-wp">
-      <div className="container-wp" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 24px' }}>
+      <div className="container-wp" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px 24px' }}>
 
-        {/* Logo */}
+        {/* Logo — now circular */}
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-          <div style={{ background: '#fff', padding: '3px', border: '2px solid var(--brand-yellow)', display: 'flex', alignItems: 'center' }}>
+          <div className="logo-circle">
             <Image
               src="/logo_huevos.jpg"
               alt="Huevitos Express Logo"
-              width={44}
-              height={44}
-              style={{ objectFit: 'contain', display: 'block' }}
+              width={48}
+              height={48}
+              style={{ objectFit: 'cover', display: 'block', width: '100%', height: '100%' }}
               priority
             />
           </div>
-          <span style={{ color: '#fff', fontWeight: 800, fontSize: '1.2rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+          <span style={{ color: '#fff', fontWeight: 800, fontSize: '1.15rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
             Huevitos Express
           </span>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="nav-desktop" style={{ display: 'flex', alignItems: 'center', gap: '28px' }}>
+        <nav className="nav-desktop" style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="nav-link-wp">
               {link.label}
