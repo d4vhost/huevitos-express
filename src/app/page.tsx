@@ -188,14 +188,14 @@ export default function Home() {
           ======================================== */}
       <section className="section-white">
         <div className="container-wp">
-          <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
-            <div data-aos="fade-right" style={{ textAlign: 'left' }}>
+          <div className="grid-2" style={{ gap: '64px', alignItems: 'stretch' }}>
+            <div data-aos="fade-right" style={{ position: 'relative', width: '100%', minHeight: '350px' }}>
               <Image
                 src="/logo_abu.jpeg"
                 alt="A.B.U. Alimentos Balanceados Uzcátegui"
-                width={500}
-                height={350}
-                style={{ objectFit: 'contain', display: 'block', width: '100%', height: 'auto', maxHeight: '350px' }}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: 'contain', objectPosition: 'left center' }}
               />
             </div>
             <div data-aos="fade-left">
