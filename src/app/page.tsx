@@ -189,19 +189,14 @@ export default function Home() {
       <section className="section-white">
         <div className="container-wp">
           <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
-            <div data-aos="fade-right" style={{ textAlign: 'center' }}>
+            <div data-aos="fade-right" style={{ textAlign: 'left' }}>
               <Image
                 src="/logo_abu.jpeg"
                 alt="A.B.U. Alimentos Balanceados Uzcátegui"
-                width={320}
-                height={200}
-                style={{ objectFit: 'contain', display: 'block', margin: '0 auto 24px', width: 'auto', height: 'auto', maxHeight: '200px' }}
+                width={500}
+                height={350}
+                style={{ objectFit: 'contain', display: 'block', width: '100%', height: 'auto', maxHeight: '350px' }}
               />
-              <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', marginTop: '12px' }}>
-                <div style={{ background: '#fff', padding: '8px', border: '1px solid var(--border)' }}>
-                  <Image src="/logo_grupouzcategui.jpeg" alt="Grupo Uzcátegui" width={100} height={50} style={{ objectFit: 'contain', display: 'block', width: 'auto', height: '40px' }} />
-                </div>
-              </div>
             </div>
             <div data-aos="fade-left">
               <span className="section-eyebrow">Respaldo de calidad</span>
