@@ -92,7 +92,7 @@ export default function Home() {
         <div className="container-wp hero-content" style={{ width: '100%' }}>
           <div style={{ maxWidth: '700px' }}>
             <span className="section-eyebrow" data-aos="fade-right">Guayaquil · Ecuador</span>
-            <h1 data-aos="fade-right" data-aos-delay="100" style={{ fontSize: '3.5rem', fontWeight: 900, color: '#fff', lineHeight: 1.08, marginBottom: '20px', textTransform: 'uppercase' }}>
+            <h1 data-aos="fade-right" data-aos-delay="100" className="hero-heading" style={{ fontSize: '3.5rem', fontWeight: 900, color: '#fff', lineHeight: 1.08, marginBottom: '20px', textTransform: 'uppercase' }}>
               Huevos frescos,<br />
               <span style={{ color: 'var(--brand-yellow)' }}>calidad que llega</span><br />
               a tu mesa.
@@ -149,7 +149,7 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
-              <div style={{ position: 'absolute', bottom: '-20px', left: '-20px', background: 'var(--brand-green)', color: '#fff', padding: '20px 28px', fontWeight: 800, fontSize: '1.1rem', textTransform: 'uppercase', zIndex: 1 }}>
+              <div className="image-overlap-badge" style={{ position: 'absolute', bottom: '-20px', left: '-20px', background: 'var(--brand-green)', color: '#fff', padding: '20px 28px', fontWeight: 800, fontSize: '1.1rem', textTransform: 'uppercase', zIndex: 1 }}>
                 Sede Guayaquil
               </div>
             </div>
@@ -189,7 +189,7 @@ export default function Home() {
       <section className="section-white">
         <div className="container-wp">
           <div className="grid-2" style={{ gap: '64px', alignItems: 'stretch' }}>
-            <div data-aos="fade-right" style={{ position: 'relative', width: '100%', minHeight: '350px' }}>
+            <div data-aos="fade-right" className="abu-logo-mobile" style={{ position: 'relative', width: '100%', minHeight: '350px' }}>
               <Image
                 src="/logo_abu.jpeg"
                 alt="A.B.U. Alimentos Balanceados Uzcátegui"
@@ -205,7 +205,7 @@ export default function Home() {
               <p className="section-subtitle" style={{ marginBottom: '20px' }}>
                 <strong>Huevitos Express</strong> no es solo una marca, es el resultado de la pasión y la experiencia de la familia Uzcátegui. Nuestra producción está respaldada por la trayectoria y el profundo conocimiento de <strong>A.B.U. Alimentos Balanceados Uzcátegui</strong>.
               </p>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginTop: '24px' }}>
+              <div className="features-mini-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginTop: '24px' }}>
                 <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
                   <div className="icon-box" style={{ width: '40px', height: '40px', fontSize: '1rem' }}>
                     <Leaf size={18} color="#fff" />

@@ -118,6 +118,11 @@ p {
   padding: 80px 0;
 }
 
+.section-gray {
+  background: var(--bg-alt);
+  padding: 80px 0;
+}
+
 .section-title {
   font-size: 2.25rem;
   font-weight: 800;
@@ -538,16 +543,120 @@ p {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .grid-1-2, .grid-2-1 { grid-template-columns: 1fr; }
+
+  .nav-desktop { display: none !important; }
+  .hamburger { display: flex !important; }
+
+  .hero-wp h1 { font-size: 2.5rem !important; }
+
+  /* Footer: 2 cols on tablet */
+  .footer-wp .grid-4 { grid-template-columns: repeat(2, 1fr); gap: 32px; }
 }
 
 @media (max-width: 768px) {
   .grid-2, .grid-3, .grid-4, .grid-1-2, .grid-2-1 { grid-template-columns: 1fr; }
+
+  .nav-desktop { display: none !important; }
+  .hamburger { display: flex !important; }
+
+  /* Hero */
+  .hero-wp { min-height: 70vh; padding: 60px 0; }
+  .hero-wp h1 { font-size: 2rem !important; }
+  .hero-wp p { font-size: 0.95rem !important; }
+
+  /* Hero page (subpages) */
+  .hero-page { padding: 48px 0 40px; }
+  .hero-page h1 { font-size: 1.8rem !important; }
+
+  /* Section padding */
+  .section-title, .section-title-white { font-size: 1.6rem; }
+  .section-white, .section-alt, .section-dark, .section-green, .section-red, .section-gray { padding: 48px 0; }
+
+  .container-wp { padding: 0 16px; }
+
+  /* Image containers: reduce fixed heights */
+  [style*="height: 420px"],
+  [style*="height: 440px"],
+  [style*="height: 380px"] {
+    height: 260px !important;
+  }
+
+  /* ABU logo section on mobile */
+  .abu-logo-mobile {
+    min-height: 220px !important;
+  }
+
+  /* Feature grid inside ABU section */
+  .features-mini-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* CTA section */
+  .cta-strip { padding: 48px 0; }
+  .cta-strip h2 { font-size: 1.5rem !important; }
+  .cta-strip .btn-yellow,
+  .cta-strip .btn-white { font-size: 0.9rem !important; padding: 14px 24px !important; }
+
+  /* Product card */
+  .product-card-body { padding: 16px; }
+
+  /* Cards */
+  .card-wp { padding: 24px; }
+
+  /* Footer: single column on mobile */
+  .footer-wp .grid-4 { grid-template-columns: 1fr; gap: 32px; }
+
+  /* Image overlap fix */
+  .image-overlap-badge {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    margin-top: 12px;
+  }
+
+  /* Gap override for grids with inline gap */
+  .grid-2[style*="gap: 64px"] {
+    gap: 32px !important;
+  }
 }
 
-@media (max-width: 640px) {
-  .hero-wp { min-height: 65vh; }
-  .section-title, .section-title-white { font-size: 1.75rem; }
-  .section-white, .section-alt, .section-dark, .section-green, .section-red { padding: 56px 0; }
+@media (max-width: 480px) {
+  .hero-wp { min-height: 60vh; padding: 40px 0; }
+  .hero-wp h1 { font-size: 1.65rem !important; }
+  .hero-wp p { font-size: 0.9rem !important; }
+
+  .hero-page { padding: 36px 0 28px; }
+  .hero-page h1 { font-size: 1.5rem !important; }
+
+  .section-title, .section-title-white { font-size: 1.35rem; }
+  .section-subtitle { font-size: 0.95rem; }
+  .section-eyebrow, .section-eyebrow-light { font-size: 0.65rem; padding: 3px 10px; }
+
+  .btn-primary, .btn-secondary, .btn-yellow, .btn-red, .btn-white, .btn-whatsapp {
+    padding: 12px 20px;
+    font-size: 0.85rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .cta-strip { padding: 40px 0; }
+  .cta-strip h2 { font-size: 1.3rem !important; }
+
+  /* ABU logo even smaller on small phones */
+  .abu-logo-mobile {
+    min-height: 180px !important;
+  }
+
+  /* Icon boxes slightly smaller */
+  .icon-box {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1.2rem !important;
+  }
+
+  /* Word break safety */
+  h1, h2, h3, h4, p { word-break: break-word; overflow-wrap: break-word; }
 }
 
 /* =============================================
