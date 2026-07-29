@@ -25,7 +25,7 @@ export default function Header() {
 
         {/* Logo — now circular */}
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-          <div className="logo-circle">
+          <div className="logo-box">
             <Image
               src="/logo_huevos.jpg"
               alt="Huevitos Express Logo"

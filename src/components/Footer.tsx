@@ -14,7 +14,7 @@ export default function Footer() {
             {/* Col 1 — Brand */}
             <div>
               <div style={{ marginBottom: '20px' }}>
-                <div className="logo-circle" style={{ width: '64px', height: '64px' }}>
+                <div className="logo-box" style={{ width: '64px', height: '64px' }}>
                   <Image
                     src="/logo_huevos.jpg"
                     alt="Huevitos Express"
