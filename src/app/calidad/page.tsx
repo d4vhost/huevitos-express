@@ -168,7 +168,7 @@ export default function Calidad() {
             <Link href="/proceso" className="btn-yellow" id="calidad-ver-proceso">
               Ver proceso completo
             </Link>
-            <Link href="/contacto" className="btn-white" id="calidad-contacto">
+            <Link href="/contacto" className="btn-white" id="calidad-contacto" style={{ color: '#1a1a1a' }}>
               Hablar con nosotros
             </Link>
           </div>
