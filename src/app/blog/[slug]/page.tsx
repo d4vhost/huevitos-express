@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { MessageCircle } from "lucide-react";
 import { notFound } from "next/navigation";
 
 type Params = { slug: string };
@@ -209,6 +208,11 @@ export default async function BlogArticulo({ params }: { params: Promise<Params>
               lineHeight: 1.8,
               color: 'var(--fg-muted)',
             }}>
+              <div style={{ marginBottom: '32px' }}>
+                <Link href="/blog" className="btn-secondary" id="blog-volver">
+                  ← Volver al blog
+                </Link>
+              </div>
               <style>{`
                 article h2 {
                   font-size: 1.4rem;
@@ -232,11 +236,6 @@ export default async function BlogArticulo({ params }: { params: Promise<Params>
                   Compártelo con alguien que quiera saber más sobre los huevos frescos. Y si tienes preguntas, no dudes en contactarnos por WhatsApp.
                 </p>
               </div>
-              <div style={{ marginTop: '32px' }}>
-                <Link href="/blog" className="btn-secondary" id="blog-volver">
-                  ← Volver al blog
-                </Link>
-              </div>
             </article>
 
             {/* Sidebar */}
@@ -254,13 +253,6 @@ export default async function BlogArticulo({ params }: { params: Promise<Params>
                     </div>
                   </Link>
                 ))}
-              </div>
-              <div style={{ background: 'var(--brand-green)', padding: '24px', textAlign: 'center' }}>
-                <p style={{ color: '#fff', fontWeight: 700, fontSize: '0.9rem', marginBottom: '16px' }}>¿Quieres hacer un pedido?</p>
-                <a href="https://wa.me/593999999999" target="_blank" rel="noopener noreferrer" className="btn-yellow" style={{ display: 'block', textAlign: 'center' }} id="articulo-whatsapp">
-                  <MessageCircle size={18} style={{ marginRight: '8px' }} />
-                  WhatsApp
-                </a>
               </div>
             </div>
 
