@@ -36,14 +36,16 @@ export default function Nosotros() {
       {/* HISTORIA */}
       <section className="section-white">
         <div className="container-wp">
-          <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
-            <div style={{ position: 'relative', height: '440px', border: '4px solid var(--brand-green)' }}>
-              <Image
-                src="/hero_huevos.jpg"
-                alt="Historia de Huevitos Express"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
+          <div className="grid-2" style={{ gap: '64px', alignItems: 'stretch' }}>
+            <div style={{ position: 'relative', height: '100%', minHeight: '300px', border: '4px solid var(--brand-green)', background: '#fff' }}>
+              <div style={{ position: 'absolute', inset: '32px' }}>
+                <Image
+                  src="/logo_huevos.jpg"
+                  alt="Historia de Huevitos Express"
+                  fill
+                  style={{ objectFit: 'contain' }}
+                />
+              </div>
             </div>
             <div>
               <span className="section-eyebrow">Cómo nació</span>
