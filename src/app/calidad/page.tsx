@@ -12,34 +12,34 @@ const etapas = [
   {
     num: "01",
     titulo: "Selección",
-    icon: <Search size={32} color="#fff" style={{ marginBottom: '8px' }} />,
+    icon: <Search size={72} color="#fff" style={{ marginBottom: '16px' }} />,
     desc: "Cada huevo es revisado individualmente antes de su distribución. Descartamos cualquier producto que no cumpla con nuestros estándares de frescura, tamaño y estado de la cáscara. Solo los mejores huevos continúan al siguiente paso.",
     detalle: ["Revisión visual de la cáscara", "Control de frescura", "Verificación de integridad", "Descarte de piezas irregulares"],
-    bgImage: "https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?auto=format&fit=crop&q=80&w=800"
+    bgImage: "/img_seleccion.jpg"
   },
   {
     num: "02",
     titulo: "Clasificación",
-    icon: <Layers size={32} color="#fff" style={{ marginBottom: '8px' }} />,
+    icon: <Layers size={72} color="#fff" style={{ marginBottom: '16px' }} />,
     desc: "Una vez seleccionados, los huevos son organizados por tamaño y presentación. Este proceso garantiza que cada cubeta, cartón o docena tenga uniformidad en el producto que recibes.",
     detalle: ["Clasificación por tamaño", "Agrupación por presentación", "Control de uniformidad", "Registro de lotes"],
-    bgImage: "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&q=80&w=800"
+    bgImage: "/img_clasificacion.jpg"
   },
   {
     num: "03",
     titulo: "Empaque",
-    icon: <Box size={32} color="#fff" style={{ marginBottom: '8px' }} />,
+    icon: <Box size={72} color="#fff" style={{ marginBottom: '16px' }} />,
     desc: "El empaque protege el producto durante el transporte y preserva su frescura. Utilizamos empaques adecuados para cada presentación que minimizan el riesgo de rotura y mantienen las condiciones óptimas del huevo.",
     detalle: ["Empaque protector", "Cubetas resistentes", "Cartones individuales", "Etiquetado correcto"],
-    bgImage: "https://images.unsplash.com/photo-1589363460779-cb704ec32b90?auto=format&fit=crop&q=80&w=800"
+    bgImage: "/img_empaque.jpg"
   },
   {
     num: "04",
     titulo: "Distribución",
-    icon: <Truck size={32} color="#fff" style={{ marginBottom: '8px' }} />,
+    icon: <Truck size={72} color="#fff" style={{ marginBottom: '16px' }} />,
     desc: "La última etapa es la más importante: llevar el producto fresco hasta el cliente. Mantenemos condiciones adecuadas durante el transporte para que los huevos lleguen en perfectas condiciones, sin importar el volumen del pedido.",
     detalle: ["Transporte cuidadoso", "Cadena de frescura", "Entregas puntuales", "Cobertura en Guayaquil"],
-    bgImage: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&q=80&w=800"
+    bgImage: "/img_distribucion.jpg"
   },
 ];
 
@@ -92,7 +92,7 @@ export default function Calidad() {
                       border: '6px solid var(--brand-yellow)'
                     }}>
                       {etapa.icon}
-                      <span style={{ fontSize: '3rem', fontWeight: 900, color: '#fff', lineHeight: 1 }}>{etapa.num}</span>
+                      <span style={{ fontSize: '6rem', fontWeight: 900, color: '#fff', lineHeight: 1 }}>{etapa.num}</span>
                     </div>
                   </div>
                   {/* Contenido (derecha) */}
@@ -142,7 +142,7 @@ export default function Calidad() {
                       border: '6px solid var(--brand-yellow)'
                     }}>
                       {etapa.icon}
-                      <span style={{ fontSize: '3rem', fontWeight: 900, color: '#fff', lineHeight: 1 }}>{etapa.num}</span>
+                      <span style={{ fontSize: '6rem', fontWeight: 900, color: '#fff', lineHeight: 1 }}>{etapa.num}</span>
                     </div>
                   </div>
                 </>
