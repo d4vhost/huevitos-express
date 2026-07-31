@@ -315,9 +315,7 @@ export default function Home() {
               <MessageCircle size={18} />
               Pedir por WhatsApp
             </a>
-            <Link href="/contacto" className="btn-white" id="home-cta-contacto" style={{ fontSize: '1.05rem', padding: '16px 36px', color: '#000' }}>
-              Ver formas de contacto
-            </Link>
+
           </div>
         </div>
       </section>
