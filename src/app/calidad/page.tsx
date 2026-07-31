@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Search, Layers, Box, Truck, Check } from "lucide-react";
+import { Search, Layers, Box, Truck, Check, Store } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Calidad | Huevitos Express",
@@ -11,6 +11,14 @@ export const metadata: Metadata = {
 const etapas = [
   {
     num: "01",
+    titulo: "Recepción",
+    icon: <Store size={72} color="#fff" style={{ marginBottom: '16px' }} />,
+    desc: "Los huevos son recibidos directamente desde los productores. En esta etapa verificamos el origen y las condiciones de llegada para asegurarnos de que el producto cumple con los requisitos mínimos de calidad antes de iniciar el proceso.",
+    detalle: ["Verificación de origen", "Control de transporte", "Inspección de llegada", "Registro de lote"],
+    bgImage: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    num: "02",
     titulo: "Selección",
     icon: <Search size={72} color="#fff" style={{ marginBottom: '16px' }} />,
     desc: "Cada huevo es revisado individualmente antes de su distribución. Descartamos cualquier producto que no cumpla con nuestros estándares de frescura, tamaño y estado de la cáscara. Solo los mejores huevos continúan al siguiente paso.",
@@ -18,7 +26,7 @@ const etapas = [
     bgImage: "/img_seleccion.jpg"
   },
   {
-    num: "02",
+    num: "03",
     titulo: "Clasificación",
     icon: <Layers size={72} color="#fff" style={{ marginBottom: '16px' }} />,
     desc: "Una vez seleccionados, los huevos son organizados por tamaño y presentación. Este proceso garantiza que cada cubeta, cartón o docena tenga uniformidad en el producto que recibes.",
@@ -26,7 +34,7 @@ const etapas = [
     bgImage: "/img_clasificacion.jpg"
   },
   {
-    num: "03",
+    num: "04",
     titulo: "Empaque",
     icon: <Box size={72} color="#fff" style={{ marginBottom: '16px' }} />,
     desc: "El empaque protege el producto durante el transporte y preserva su frescura. Utilizamos empaques adecuados para cada presentación que minimizan el riesgo de rotura y mantienen las condiciones óptimas del huevo.",
@@ -34,8 +42,8 @@ const etapas = [
     bgImage: "/img_empaque.jpg"
   },
   {
-    num: "04",
-    titulo: "Distribución",
+    num: "05",
+    titulo: "Distribución y Entrega",
     icon: <Truck size={72} color="#fff" style={{ marginBottom: '16px' }} />,
     desc: "La última etapa es la más importante: llevar el producto fresco hasta el cliente. Mantenemos condiciones adecuadas durante el transporte para que los huevos lleguen en perfectas condiciones, sin importar el volumen del pedido.",
     detalle: ["Transporte cuidadoso", "Cadena de frescura", "Entregas puntuales", "Cobertura en Guayaquil"],
