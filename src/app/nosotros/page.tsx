@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Award, MapPin, Leaf, Target, Eye, Egg, HandshakeIcon, CheckCircle, TrendingUp } from "lucide-react";
+import { Award, MapPin, Leaf, Target, Eye, Egg, HandshakeIcon, CheckCircle, TrendingUp, ShieldCheck, Rocket } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Nosotros | Huevitos Express",
@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 
 const valores = [
   { icon: <CheckCircle size={40} color="var(--brand-green)" />, title: 'Compromiso', desc: 'Nos comprometemos con cada cliente, asegurando que cada pedido sea entregado a tiempo y en perfectas condiciones.' },
-  { icon: <Target size={40} color="var(--brand-green)" />, title: 'Responsabilidad', desc: 'Actuamos con responsabilidad en cada etapa del proceso, desde la selección hasta la entrega final del producto.' },
+  { icon: <ShieldCheck size={40} color="var(--brand-green)" />, title: 'Responsabilidad', desc: 'Actuamos con responsabilidad en cada etapa del proceso, desde la selección hasta la entrega final del producto.' },
   { icon: <HandshakeIcon size={40} color="var(--brand-green)" />, title: 'Confianza', desc: 'Construimos relaciones de largo plazo con nuestros clientes basadas en la transparencia y la honestidad.' },
-  { icon: <Award size={40} color="var(--brand-yellow)" />, title: 'Calidad', desc: 'La calidad no es una opción, es nuestro estándar. Cada huevo que distribuimos ha sido seleccionado con cuidado.' },
+  { icon: <Award size={40} color="var(--brand-green)" />, title: 'Calidad', desc: 'La calidad no es una opción, es nuestro estándar. Cada huevo que distribuimos ha sido seleccionado con cuidado.' },
 ];
 
 export default function Nosotros() {
@@ -116,7 +116,7 @@ export default function Nosotros() {
           <div className="grid-2">
             <div className="card-wp">
               <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', marginBottom: '20px' }}>
-                <div className="icon-box"><Target size={24} /></div>
+                <div className="icon-box"><Rocket size={24} /></div>
                 <h3 style={{ fontWeight: 800, fontSize: '1.25rem', textTransform: 'uppercase', margin: 0 }}>Nuestra Misión</h3>
               </div>
               <p style={{ color: 'var(--fg-muted)', lineHeight: 1.75, margin: 0 }}>
@@ -147,7 +147,7 @@ export default function Nosotros() {
           <div className="grid-4">
             {valores.map((v, i) => (
               <div key={i} className="card-wp" style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: '2.5rem', marginBottom: '16px' }}>{v.icon}</div>
+                <div style={{ display: 'flex', justifyContent: 'center', fontSize: '2.5rem', marginBottom: '16px' }}>{v.icon}</div>
                 <h3 style={{ fontWeight: 800, fontSize: '1rem', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '12px' }}>{v.title}</h3>
                 <p style={{ fontSize: '0.875rem', color: 'var(--fg-muted)', lineHeight: 1.65, margin: 0 }}>{v.desc}</p>
               </div>
