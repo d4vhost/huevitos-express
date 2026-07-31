@@ -75,17 +75,16 @@ export default function Calidad() {
       {etapas.map((etapa, i) => (
         <section key={i} className={i % 2 === 0 ? "section-gray" : "section-white"}>
           <div className="container-wp">
-            <div className={i % 2 === 0 ? "grid-1-2" : "grid-2-1"} style={{ gap: '64px', alignItems: 'center' }}>
+            <div className={i % 2 === 0 ? "grid-1-2" : "grid-2-1"} style={{ gap: '64px', alignItems: 'stretch' }}>
               {i % 2 === 0 ? (
                 <>
                   {/* Número grande (izquierda) */}
-                  <div style={{ textAlign: 'center' }}>
+                  <div style={{ textAlign: 'center', height: '100%' }}>
                     <div style={{
-                      width: '160px', height: '160px',
+                      width: '100%', height: '100%',
                       background: 'var(--brand-green)',
                       display: 'flex', flexDirection: 'column',
                       alignItems: 'center', justifyContent: 'center',
-                      margin: '0 auto',
                       border: '6px solid var(--brand-yellow)'
                     }}>
                       {etapa.icon}
@@ -130,13 +129,12 @@ export default function Calidad() {
                     </ul>
                   </div>
                   {/* Número grande (derecha) */}
-                  <div style={{ textAlign: 'center' }}>
+                  <div style={{ textAlign: 'center', height: '100%' }}>
                     <div style={{
-                      width: '160px', height: '160px',
+                      width: '100%', height: '100%',
                       background: 'var(--brand-green)',
                       display: 'flex', flexDirection: 'column',
                       alignItems: 'center', justifyContent: 'center',
-                      margin: '0 auto',
                       border: '6px solid var(--brand-yellow)'
                     }}>
                       {etapa.icon}
