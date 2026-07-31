@@ -31,7 +31,7 @@ export default function Header() {
               alt="Huevitos Express Logo"
               width={48}
               height={48}
-              style={{ objectFit: 'cover', display: 'block', width: '100%', height: '100%' }}
+              style={{ objectFit: 'cover', objectPosition: 'center 25%', display: 'block', width: '100%', height: '100%' }}
               priority
             />
           </div>
