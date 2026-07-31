@@ -49,22 +49,29 @@ export default function Contacto() {
             {[
               { icon: <MessageCircle size={24} color="#25D366" />, titulo: 'WhatsApp', valor: '+593 99 999 9999', sub: 'Respuesta rápida', link: 'https://wa.me/593999999999' },
               { icon: <Mail size={24} color="var(--brand-green)" />, titulo: 'Correo', valor: 'info@huevitosexpress.com', sub: 'Respuesta en 24h', link: 'mailto:info@huevitosexpress.com' },
-              { icon: <MapPin size={24} color="var(--brand-green)" />, titulo: 'Dirección', valor: 'Guayaquil, Ecuador', sub: 'Sede principal', link: '#mapa' },
+              { icon: <MapPin size={24} color="var(--brand-green)" />, titulo: 'Dirección', valor: 'Guayaquil, Ecuador', sub: 'Sede principal', link: null },
               { icon: <Clock size={24} color="var(--brand-green)" />, titulo: 'Horarios', valor: 'Lun – Sáb', sub: '7:00 AM – 6:00 PM', link: null },
-            ].map((item, i) => (
-              <div key={i} className="card-wp" style={{ textAlign: 'center' }}>
-                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
-                  {item.icon}
+            ].map((item, i) => {
+              const CardContent = (
+                <>
+                  <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
+                    {item.icon}
+                  </div>
+                  <h3 style={{ fontWeight: 800, fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', color: 'var(--fg)' }}>{item.titulo}</h3>
+                  <p style={{ color: item.link ? 'var(--brand-green)' : 'var(--fg)', fontWeight: 700, fontSize: '0.85rem', marginBottom: '4px', textDecoration: 'none', wordBreak: 'break-word' }}>{item.valor}</p>
+                  <p style={{ fontSize: '0.8rem', color: 'var(--fg-light)', margin: 0 }}>{item.sub}</p>
+                </>
+              );
+              return item.link ? (
+                <a key={i} href={item.link} className="card-wp" target="_blank" rel="noopener noreferrer" style={{ textAlign: 'center', display: 'block', textDecoration: 'none' }}>
+                  {CardContent}
+                </a>
+              ) : (
+                <div key={i} className="card-wp" style={{ textAlign: 'center' }}>
+                  {CardContent}
                 </div>
-                <h3 style={{ fontWeight: 800, fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px' }}>{item.titulo}</h3>
-                {item.link ? (
-                  <a href={item.link} style={{ color: 'var(--brand-green)', fontWeight: 700, fontSize: '0.85rem', display: 'block', marginBottom: '4px', textDecoration: 'none', wordBreak: 'break-word' }}>{item.valor}</a>
-                ) : (
-                  <p style={{ color: 'var(--fg)', fontWeight: 700, fontSize: '0.85rem', marginBottom: '4px' }}>{item.valor}</p>
-                )}
-                <p style={{ fontSize: '0.8rem', color: 'var(--fg-light)', margin: 0 }}>{item.sub}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -130,14 +137,10 @@ export default function Contacto() {
                     <label className="label-wp" htmlFor="mensaje">Mensaje *</label>
                     <textarea className="input-wp" id="mensaje" name="mensaje" required rows={5} placeholder="Escribe tu mensaje..." value={form.mensaje} onChange={handleChange} style={{ resize: 'vertical' }}></textarea>
                   </div>
-                  <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                    <button type="submit" className="btn-primary" id="contacto-enviar" style={{ fontSize: '1rem', padding: '14px 32px' }}>
+                  <div>
+                    <button type="submit" className="btn-primary" id="contacto-enviar" style={{ fontSize: '1rem', padding: '14px 32px', width: '100%' }}>
                       Enviar mensaje
                     </button>
-                    <a href="https://wa.me/593999999999?text=Hola,%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer" className="btn-whatsapp" id="contacto-whatsapp-form" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-                      <MessageCircle size={16} />
-                      O escríbenos por WhatsApp
-                    </a>
                   </div>
                 </form>
               )}
@@ -201,21 +204,7 @@ export default function Contacto() {
               title="Ubicación Guayaquil"
             ></iframe>
           </div>
-          <div className="grid-3" style={{ gap: '24px', marginTop: '24px' }}>
-            {[
-              { icon: <MapPin size={20} color="var(--brand-green)" />, titulo: 'Dirección', desc: 'Guayaquil, Ecuador' },
-              { icon: <Clock size={20} color="var(--brand-green)" />, titulo: 'Horarios', desc: 'Lunes a Sábado: 7:00 AM – 6:00 PM' },
-              { icon: <MessageCircle size={20} color="var(--brand-green)" />, titulo: 'Pedidos', desc: '+593 99 999 9999 · Pedidos por WhatsApp' },
-            ].map((item, i) => (
-              <div key={i} style={{ display: 'flex', gap: '12px', alignItems: 'center', padding: '20px', background: '#fff', border: '1px solid var(--border)', borderTop: '3px solid var(--brand-green)' }}>
-                <div style={{ flexShrink: 0 }}>{item.icon}</div>
-                <div>
-                  <p style={{ fontWeight: 800, fontSize: '0.875rem', textTransform: 'uppercase', margin: '0 0 4px' }}>{item.titulo}</p>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--fg-muted)', margin: 0 }}>{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+
         </div>
       </section>
 
