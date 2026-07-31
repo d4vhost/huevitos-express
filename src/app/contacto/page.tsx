@@ -31,12 +31,12 @@ export default function Contacto() {
       {/* HERO */}
       <section className="hero-page" style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/img_contactanos.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container-wp">
-          <span className="section-eyebrow" data-aos="fade-right">Estamos aquí para ti</span>
-          <h1 data-aos="fade-right" style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
+          <span className="section-eyebrow">Estamos aquí para ti</span>
+          <h1 style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
             Contáctanos
           </h1>
           <div style={{ width: '48px', height: '4px', background: 'var(--brand-yellow)', marginBottom: '20px' }}></div>
-          <p data-aos="fade-right" style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', maxWidth: '640px', lineHeight: 1.7 }}>
+          <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', maxWidth: '640px', lineHeight: 1.7 }}>
             ¿Tienes preguntas, quieres hacer un pedido o necesitas información sobre distribución? Escríbenos y te respondemos a la brevedad.
           </p>
         </div>
@@ -44,7 +44,7 @@ export default function Contacto() {
 
       {/* CANALES RÁPIDOS */}
       <section className="section-gray">
-        <div className="container-wp" data-aos="fade-up">
+        <div className="container-wp">
           <div className="grid-4" style={{ gap: '24px' }}>
             {[
               { icon: <MessageCircle size={24} color="#25D366" />, titulo: 'WhatsApp', valor: '+593 99 999 9999', sub: 'Respuesta rápida', link: 'https://wa.me/593999999999' },
@@ -63,11 +63,11 @@ export default function Contacto() {
                 </>
               );
               return item.link ? (
-                <a key={i} href={item.link} className="card-wp" data-aos="fade-up" data-aos-delay={i * 100} target="_blank" rel="noopener noreferrer" style={{ textAlign: 'center', display: 'block', textDecoration: 'none' }}>
+                <a key={i} href={item.link} className="card-wp" target="_blank" rel="noopener noreferrer" style={{ textAlign: 'center', display: 'block', textDecoration: 'none' }}>
                   {CardContent}
                 </a>
               ) : (
-                <div key={i} className="card-wp" data-aos="fade-up" data-aos-delay={i * 100} style={{ textAlign: 'center' }}>
+                <div key={i} className="card-wp" style={{ textAlign: 'center' }}>
                   {CardContent}
                 </div>
               );
@@ -78,7 +78,7 @@ export default function Contacto() {
 
       {/* FORMULARIO + INFO */}
       <section className="section-white">
-        <div className="container-wp" data-aos="fade-up">
+        <div className="container-wp">
           <div className="grid-2-1" style={{ gap: '64px', alignItems: 'start' }}>
 
             <div>
@@ -186,7 +186,7 @@ export default function Contacto() {
 
       {/* MAPA */}
       <section className="section-gray" id="mapa">
-        <div className="container-wp" data-aos="fade-up">
+        <div className="container-wp">
           <div style={{ textAlign: 'center', marginBottom: '40px' }}>
             <span className="section-eyebrow">Dónde estamos</span>
             <h2 className="section-title">Sede en Guayaquil</h2>

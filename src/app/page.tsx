@@ -91,16 +91,16 @@ export default function Home() {
         </div>
         <div className="container-wp hero-content" style={{ width: '100%' }}>
           <div style={{ maxWidth: '700px' }}>
-            <span className="section-eyebrow" data-aos="fade-right">Guayaquil · Ecuador</span>
-            <h1 data-aos="fade-right" data-aos-delay="100" className="hero-heading" style={{ fontSize: '3.5rem', fontWeight: 900, color: '#fff', lineHeight: 1.08, marginBottom: '20px', textTransform: 'uppercase' }}>
+            <span className="section-eyebrow">Guayaquil · Ecuador</span>
+            <h1 className="hero-heading" style={{ fontSize: '3.5rem', fontWeight: 900, color: '#fff', lineHeight: 1.08, marginBottom: '20px', textTransform: 'uppercase' }}>
               Huevos frescos,<br />
               <span style={{ color: 'var(--brand-yellow)' }}>calidad que llega</span><br />
               a tu mesa.
             </h1>
-            <p data-aos="fade-right" data-aos-delay="200" style={{ color: 'rgba(255,255,255,0.88)', fontSize: '1.1rem', lineHeight: 1.7, marginBottom: '36px', maxWidth: '560px' }}>
+            <p style={{ color: 'rgba(255,255,255,0.88)', fontSize: '1.1rem', lineHeight: 1.7, marginBottom: '36px', maxWidth: '560px' }}>
               En Huevitos Express trabajamos para ofrecer huevos seleccionados, frescos y distribuidos con rapidez, respaldados por la experiencia de la familia Uzcátegui en el sector avícola.
             </p>
-            <div data-aos="fade-up" data-aos-delay="300" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Link href="/productos" className="btn-yellow" id="hero-ver-productos">
                 Ver productos
               </Link>
@@ -141,7 +141,7 @@ export default function Home() {
       <section className="section-white">
         <div className="container-wp">
           <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
-            <div data-aos="fade-right">
+            <div>
               <span className="section-eyebrow">Quiénes somos</span>
               <h2 className="section-title">Una marca comprometida con la frescura</h2>
               <div className="section-divider"></div>
@@ -157,7 +157,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div data-aos="fade-left" style={{ position: 'relative', height: '420px', border: '4px solid var(--brand-yellow)' }}>
+            <div style={{ position: 'relative', height: '420px', border: '4px solid var(--brand-yellow)' }}>
               <Image
                 src="https://images.unsplash.com/photo-1569288052389-dac9b0ac9eac?q=80&w=1000&auto=format&fit=crop"
                 alt="Huevos frescos en granja"
@@ -178,14 +178,14 @@ export default function Home() {
           ======================================== */}
       <section className="section-alt">
         <div className="container-wp">
-          <div style={{ textAlign: 'center', marginBottom: '48px' }} data-aos="fade-up">
+          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
             <span className="section-eyebrow">Nuestras ventajas</span>
             <h2 className="section-title">¿Por qué elegir Huevitos Express?</h2>
             <div className="section-divider" style={{ margin: '16px auto 0' }}></div>
           </div>
           <div className="grid-4">
             {ventajas.map((item, i) => (
-              <div key={i} className="card-wp" style={{ textAlign: 'center' }} data-aos="fade-up" data-aos-delay={i * 100}>
+              <div key={i} className="card-wp" style={{ textAlign: 'center' }}>
                 <div className="icon-box" style={{ margin: '0 auto 20px' }}>
                   {item.icon}
                 </div>
@@ -205,7 +205,7 @@ export default function Home() {
       <section className="section-white">
         <div className="container-wp">
           <div className="grid-2" style={{ gap: '64px', alignItems: 'stretch' }}>
-            <div data-aos="fade-right" className="abu-logo-mobile" style={{ position: 'relative', width: '100%', minHeight: '350px' }}>
+            <div className="abu-logo-mobile" style={{ position: 'relative', width: '100%', minHeight: '350px' }}>
               <Image
                 src="/logo_abu.jpeg"
                 alt="A.B.U. Alimentos Balanceados Uzcátegui"
@@ -214,7 +214,7 @@ export default function Home() {
                 style={{ objectFit: 'contain', objectPosition: 'left center' }}
               />
             </div>
-            <div data-aos="fade-left">
+            <div>
               <span className="section-eyebrow">Respaldo de calidad</span>
               <h2 className="section-title">El respaldo de la excelencia</h2>
               <div className="section-divider"></div>
@@ -269,7 +269,7 @@ export default function Home() {
           ======================================== */}
       <section className="section-alt">
         <div className="container-wp">
-          <div data-aos="fade-up" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '48px', flexWrap: 'wrap', gap: '16px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '48px', flexWrap: 'wrap', gap: '16px' }}>
             <div>
               <span className="section-eyebrow">Catálogo</span>
               <h2 className="section-title" style={{ margin: 0 }}>Nuestros productos</h2>
@@ -281,7 +281,7 @@ export default function Home() {
           </div>
           <div className="grid-3">
             {productos.map((p, i) => (
-              <div key={i} className="product-card" data-aos="fade-up" data-aos-delay={i * 100}>
+              <div key={i} className="product-card">
                 <div style={{ position: 'relative', height: '220px', overflow: 'hidden' }}>
                   <Image
                     src={p.img}
@@ -312,7 +312,7 @@ export default function Home() {
           CTA FINAL
           ======================================== */}
       <section className="cta-strip">
-        <div className="container-wp" style={{ textAlign: 'center' }} data-aos="zoom-in">
+        <div className="container-wp" style={{ textAlign: 'center' }}>
           <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '2.25rem', textTransform: 'uppercase', marginBottom: '16px' }}>
             ¿Necesitas abastecer tu hogar o negocio?
           </h2>
