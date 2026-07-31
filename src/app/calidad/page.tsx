@@ -165,10 +165,7 @@ export default function Calidad() {
             Nuestro proceso de selección no es un trámite — es nuestra garantía de que el huevo que llega a tu mesa es fresco, bien clasificado y en perfectas condiciones. Eso es lo que nos comprometemos a entregarte, siempre.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/proceso" className="btn-yellow" id="calidad-ver-proceso">
-              Ver proceso completo
-            </Link>
-            <Link href="/contacto" className="btn-white" id="calidad-contacto" style={{ color: '#1a1a1a' }}>
+            <Link href="/contacto" className="btn-yellow" id="calidad-contacto" style={{ color: '#1a1a1a' }}>
               Hablar con nosotros
             </Link>
           </div>

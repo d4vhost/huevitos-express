@@ -54,7 +54,6 @@ export default function Footer() {
                   { href: '/nosotros', label: 'Nosotros' },
                   { href: '/productos', label: 'Productos' },
                   { href: '/calidad', label: 'Calidad' },
-                  { href: '/proceso', label: 'Nuestro Proceso' },
                   { href: '/preguntas-frecuentes', label: 'Preguntas Frecuentes' },
                   { href: '/blog', label: 'Blog' },
                   { href: '/contacto', label: 'Contacto' },
