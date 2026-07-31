@@ -62,8 +62,9 @@ const faqs = [
   },
 ];
 
-export default function FAQ() {
+export default function PreguntasFrecuentes() {
   const [openItem, setOpenItem] = useState<string | null>(null);
+  const [activeCategory, setActiveCategory] = useState<number>(0);
 
   return (
     <div>
@@ -93,61 +94,62 @@ export default function FAQ() {
                 Categorías
               </p>
               {faqs.map((cat, i) => (
-                <a
+                <button
                   key={i}
-                  href={`#cat-${i}`}
+                  onClick={() => setActiveCategory(i)}
                   style={{
                     display: 'block',
+                    width: '100%',
+                    textAlign: 'left',
                     padding: '12px 16px',
-                    background: '#fff',
-                    borderLeft: '4px solid var(--brand-green)',
+                    background: activeCategory === i ? 'var(--brand-green)' : '#fff',
+                    border: 'none',
+                    borderLeft: `4px solid ${activeCategory === i ? 'var(--brand-yellow)' : 'var(--brand-green)'}`,
                     marginBottom: '8px',
-                    textDecoration: 'none',
-                    color: 'var(--fg)',
+                    color: activeCategory === i ? '#fff' : 'var(--fg)',
                     fontWeight: 700,
                     fontSize: '0.875rem',
                     textTransform: 'uppercase',
                     letterSpacing: '0.5px',
+                    cursor: 'pointer'
                   }}
                 >
                   {cat.categoria}
-                </a>
+                </button>
               ))}
             </div>
 
             {/* Preguntas */}
             <div>
-              {faqs.map((cat, ci) => (
-                <div key={ci} id={`cat-${ci}`} style={{ marginBottom: '48px' }}>
-                  <h2 style={{ fontWeight: 800, fontSize: '1.15rem', textTransform: 'uppercase', margin: '0 0 24px', paddingBottom: '12px', borderBottom: '2px solid var(--brand-green)' }}>
-                    {cat.categoria}
-                  </h2>
-                  {cat.preguntas.map((faq, fi) => {
-                    const key = `${ci}-${fi}`;
-                    return (
-                      <div key={fi} className="faq-item">
-                        <button
-                          className="faq-question"
-                          onClick={() => setOpenItem(openItem === key ? null : key)}
-                          aria-expanded={openItem === key}
-                          id={`faq-${ci}-${fi}`}
-                        >
-                          <span>{faq.q}</span>
-                          {openItem === key
-                            ? <ChevronUp size={16} color="var(--brand-green)" style={{ flexShrink: 0, marginLeft: '16px' }} />
-                            : <ChevronDown size={16} color="var(--brand-green)" style={{ flexShrink: 0, marginLeft: '16px' }} />
-                          }
-                        </button>
-                        {openItem === key && (
-                          <div className="faq-answer">
-                            <p style={{ margin: 0 }}>{faq.a}</p>
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              ))}
+              <div style={{ marginBottom: '48px' }}>
+                <h2 style={{ fontWeight: 800, fontSize: '1.15rem', textTransform: 'uppercase', margin: '0 0 24px', paddingBottom: '12px', borderBottom: '2px solid var(--brand-green)' }}>
+                  {faqs[activeCategory].categoria}
+                </h2>
+                {faqs[activeCategory].preguntas.map((faq, fi) => {
+                  const key = `${activeCategory}-${fi}`;
+                  return (
+                    <div key={fi} className="faq-item">
+                      <button
+                        className="faq-question"
+                        onClick={() => setOpenItem(openItem === key ? null : key)}
+                        aria-expanded={openItem === key}
+                        id={`faq-${activeCategory}-${fi}`}
+                      >
+                        <span>{faq.q}</span>
+                        {openItem === key
+                          ? <ChevronUp size={16} color="var(--brand-green)" style={{ flexShrink: 0, marginLeft: '16px' }} />
+                          : <ChevronDown size={16} color="var(--brand-green)" style={{ flexShrink: 0, marginLeft: '16px' }} />
+                        }
+                      </button>
+                      {openItem === key && (
+                        <div className="faq-answer">
+                          <p style={{ margin: 0 }}>{faq.a}</p>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
