@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Blog | Huevitos Express",
@@ -65,7 +64,7 @@ const articulos = [
   },
 ];
 
-const categorias = [...new Set(articulos.map(a => a.categoria))];
+
 
 export default function Blog() {
   return (
@@ -147,20 +146,7 @@ export default function Blog() {
 
             {/* Sidebar */}
             <div style={{ position: 'sticky', top: '100px' }}>
-              {/* Búsqueda */}
-              <div style={{ background: '#fff', border: '1px solid var(--border)', borderTop: '4px solid var(--brand-green)', padding: '24px', marginBottom: '24px' }}>
-                <h3 style={{ fontWeight: 800, fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '16px' }}>
-                  Categorías
-                </h3>
-                {categorias.map((cat, i) => (
-                  <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid var(--border)', fontSize: '0.875rem' }}>
-                    <span style={{ color: 'var(--fg-muted)' }}>{cat}</span>
-                    <span className="badge-green" style={{ fontSize: '0.7rem' }}>
-                      {articulos.filter(a => a.categoria === cat).length}
-                    </span>
-                  </div>
-                ))}
-              </div>
+
 
               {/* Artículos recientes */}
               <div style={{ background: '#fff', border: '1px solid var(--border)', borderTop: '4px solid var(--brand-yellow)', padding: '24px', marginBottom: '24px' }}>
@@ -180,23 +166,6 @@ export default function Blog() {
                 ))}
               </div>
 
-              {/* CTA WhatsApp */}
-              <div style={{ background: 'var(--brand-green)', padding: '24px', textAlign: 'center' }}>
-                <p style={{ color: '#fff', fontWeight: 700, fontSize: '0.9rem', marginBottom: '16px', textTransform: 'uppercase' }}>
-                  ¿Prefieres hablar directamente?
-                </p>
-                <a
-                  href="https://wa.me/593999999999"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-yellow"
-                  style={{ display: 'block', textAlign: 'center' }}
-                  id="blog-sidebar-whatsapp"
-                >
-                  <MessageCircle size={18} style={{ marginRight: '8px' }} />
-                  WhatsApp
-                </a>
-              </div>
             </div>
 
           </div>
