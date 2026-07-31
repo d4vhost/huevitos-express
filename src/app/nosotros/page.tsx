@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 };
 
 const valores = [
-  { icon: '✅', title: 'Compromiso', desc: 'Nos comprometemos con cada cliente, asegurando que cada pedido sea entregado a tiempo y en perfectas condiciones.' },
-  { icon: '🎯', title: 'Responsabilidad', desc: 'Actuamos con responsabilidad en cada etapa del proceso, desde la selección hasta la entrega final del producto.' },
-  { icon: '🤝', title: 'Confianza', desc: 'Construimos relaciones de largo plazo con nuestros clientes basadas en la transparencia y la honestidad.' },
-  { icon: '⭐', title: 'Calidad', desc: 'La calidad no es una opción, es nuestro estándar. Cada huevo que distribuimos ha sido seleccionado con cuidado.' },
+  { icon: <CheckCircle size={40} color="var(--brand-green)" />, title: 'Compromiso', desc: 'Nos comprometemos con cada cliente, asegurando que cada pedido sea entregado a tiempo y en perfectas condiciones.' },
+  { icon: <Target size={40} color="var(--brand-green)" />, title: 'Responsabilidad', desc: 'Actuamos con responsabilidad en cada etapa del proceso, desde la selección hasta la entrega final del producto.' },
+  { icon: <HandshakeIcon size={40} color="var(--brand-green)" />, title: 'Confianza', desc: 'Construimos relaciones de largo plazo con nuestros clientes basadas en la transparencia y la honestidad.' },
+  { icon: <Award size={40} color="var(--brand-yellow)" />, title: 'Calidad', desc: 'La calidad no es una opción, es nuestro estándar. Cada huevo que distribuimos ha sido seleccionado con cuidado.' },
 ];
 
 export default function Nosotros() {
