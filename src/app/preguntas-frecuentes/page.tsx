@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, ChevronUp, MessageCircle } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const faqs = [
   {
@@ -113,22 +113,6 @@ export default function FAQ() {
                   {cat.categoria}
                 </a>
               ))}
-              <div style={{ marginTop: '32px', padding: '20px', background: '#fff', borderTop: '4px solid var(--brand-yellow)' }}>
-                <p style={{ fontSize: '0.875rem', color: 'var(--fg-muted)', marginBottom: '16px' }}>
-                  ¿No encontraste tu respuesta?
-                </p>
-                <a
-                  href="https://wa.me/593999999999"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-whatsapp"
-                  style={{ width: '100%', justifyContent: 'center', padding: '10px', fontSize: '0.85rem' }}
-                  id="faq-whatsapp"
-                >
-                  <MessageCircle size={15} />
-                  Preguntar por WhatsApp
-                </a>
-              </div>
             </div>
 
             {/* Preguntas */}
