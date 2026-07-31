@@ -345,6 +345,51 @@ p {
 }
 
 /* =============================================
+   TICKER / MARQUEE
+   ============================================= */
+.ticker-strip {
+  background: var(--bg-dark);
+  overflow: hidden;
+  padding: 10px 0;
+  border-bottom: 3px solid var(--brand-yellow);
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 25s linear infinite;
+}
+
+.ticker-content {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  padding: 0 28px;
+}
+
+.ticker-dot {
+  color: var(--brand-yellow);
+  font-size: 0.45rem;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* =============================================
    HERO SECTION
    ============================================= */
 .hero-wp {

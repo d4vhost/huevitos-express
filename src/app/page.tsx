@@ -119,6 +119,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* TICKER / MARQUEE */}
+      <div className="ticker-strip">
+        <div className="ticker-track">
+          {[...Array(2)].map((_, j) => (
+            <div key={j} className="ticker-content" aria-hidden={j === 1}>
+              {['HUEVOS FRESCOS', 'DISTRIBUCIÓN EN GUAYAQUIL', 'PEDIDOS POR WHATSAPP', 'CALIDAD GARANTIZADA', 'DESDE 2003', 'ENTREGAS A DOMICILIO', 'HUEVITOS EXPRESS'].map((text, i) => (
+                <span key={i} className="ticker-item">
+                  <span className="ticker-dot">●</span>
+                  {text}
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* ========================================
           QUIÉNES SOMOS
           ======================================== */}
