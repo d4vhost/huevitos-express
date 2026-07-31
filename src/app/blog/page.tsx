@@ -145,7 +145,7 @@ export default function Blog() {
             </div>
 
             {/* Sidebar */}
-            <div style={{ position: 'sticky', top: '100px' }}>
+            <div>
 
 
               {/* Artículos recientes */}

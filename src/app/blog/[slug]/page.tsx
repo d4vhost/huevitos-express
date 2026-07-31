@@ -239,7 +239,7 @@ export default async function BlogArticulo({ params }: { params: Promise<Params>
             </article>
 
             {/* Sidebar */}
-            <div style={{ position: 'sticky', top: '100px' }}>
+            <div>
               <div style={{ background: '#fff', border: '1px solid var(--border)', borderTop: '4px solid var(--brand-green)', padding: '24px', marginBottom: '24px' }}>
                 <h3 style={{ fontWeight: 800, fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '16px' }}>Otros artículos</h3>
                 {otros.map(([s, a], i) => (
