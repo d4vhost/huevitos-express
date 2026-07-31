@@ -227,12 +227,6 @@ p {
   border-top: 4px solid var(--brand-green);
   box-shadow: var(--shadow);
   padding: 32px;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-
-.card-wp:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-4px);
 }
 
 .card-wp-yellow {
@@ -241,12 +235,6 @@ p {
   border-top: 4px solid var(--brand-yellow);
   box-shadow: var(--shadow);
   padding: 32px;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-
-.card-wp-yellow:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-4px);
 }
 
 /* =============================================
@@ -266,14 +254,7 @@ p {
   border-radius: 0;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.25s, color 0.25s, transform 0.2s;
   white-space: nowrap;
-}
-
-.btn-primary:hover {
-  background: var(--brand-green-dark);
-  border-color: var(--brand-green-dark);
-  transform: translateY(-2px);
 }
 
 .btn-secondary {
@@ -290,13 +271,7 @@ p {
   border-radius: 0;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.25s, color 0.25s;
   white-space: nowrap;
-}
-
-.btn-secondary:hover {
-  background: var(--brand-green);
-  color: #fff;
 }
 
 .btn-yellow {
@@ -313,14 +288,7 @@ p {
   border-radius: 0;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.25s, transform 0.2s;
   white-space: nowrap;
-}
-
-.btn-yellow:hover {
-  background: var(--brand-yellow-dark);
-  border-color: var(--brand-yellow-dark);
-  transform: translateY(-2px);
 }
 
 .btn-red {
@@ -337,14 +305,7 @@ p {
   border-radius: 0;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.25s, transform 0.2s;
   white-space: nowrap;
-}
-
-.btn-red:hover {
-  background: var(--brand-red-dark);
-  border-color: var(--brand-red-dark);
-  transform: translateY(-2px);
 }
 
 .btn-white {
@@ -361,14 +322,7 @@ p {
   border-radius: 0;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.25s, color 0.25s;
   white-space: nowrap;
-}
-
-.btn-white:hover {
-  background: var(--brand-yellow);
-  border-color: var(--brand-yellow);
-  color: var(--fg);
 }
 
 .btn-whatsapp {
@@ -387,13 +341,7 @@ p {
   border-radius: 0;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.25s;
   white-space: nowrap;
-}
-
-.btn-whatsapp:hover {
-  background: #1daa52;
-  border-color: #1daa52;
 }
 
 /* =============================================
@@ -498,11 +446,6 @@ p {
   border: 1px solid var(--border);
   border-left: 4px solid var(--brand-green);
   margin-bottom: 8px;
-  transition: box-shadow 0.2s;
-}
-
-.faq-item:hover {
-  box-shadow: var(--shadow);
 }
 
 .faq-question {
@@ -519,11 +462,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background 0.15s;
-}
-
-.faq-question:hover {
-  background: var(--bg-alt);
 }
 
 .faq-answer {
@@ -772,11 +710,6 @@ p {
   justify-content: center;
   font-size: 1.5rem;
   flex-shrink: 0;
-  transition: transform 0.3s;
-}
-
-.icon-box:hover {
-  transform: scale(1.1);
 }
 
 .icon-box-yellow {
@@ -829,12 +762,6 @@ p {
   border: 1px solid var(--border);
   background: var(--bg);
   overflow: hidden;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-
-.product-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-4px);
 }
 
 .product-card img {

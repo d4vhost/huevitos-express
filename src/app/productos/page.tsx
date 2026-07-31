@@ -73,12 +73,12 @@ export default function Productos() {
       {/* HERO */}
       <section className="hero-page" style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/img_productos.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container-wp">
-          <span className="section-eyebrow">Catálogo</span>
-          <h1 style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
+          <span className="section-eyebrow" data-aos="fade-right">Catálogo</span>
+          <h1 data-aos="fade-right" style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
             Nuestros productos
           </h1>
           <div style={{ width: '48px', height: '4px', background: 'var(--brand-yellow)', marginBottom: '20px' }}></div>
-          <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', maxWidth: '640px', lineHeight: 1.7 }}>
+          <p data-aos="fade-right" style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', maxWidth: '640px', lineHeight: 1.7 }}>
             Disponemos de diferentes presentaciones de huevos frescos seleccionados para adaptarnos a las necesidades de cada hogar, comercio o negocio.
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function Productos() {
 
       {/* INTRO */}
       <section className="section-white">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
             <div>
               <span className="section-eyebrow">Nuestro catálogo</span>
@@ -129,7 +129,7 @@ export default function Productos() {
 
       {/* CATÁLOGO */}
       <section className="section-gray">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <div style={{ textAlign: 'center', marginBottom: '48px' }}>
             <span className="section-eyebrow">Fichas de producto</span>
             <h2 className="section-title">Catálogo completo</h2>
@@ -137,7 +137,7 @@ export default function Productos() {
           </div>
           <div className="grid-4">
             {productos.map((p, i) => (
-              <div key={i} className="product-card">
+              <div key={i} className="product-card" data-aos="fade-up" data-aos-delay={i * 100}>
                 <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
                   <Image src={p.img} alt={p.nombre} fill style={{ objectFit: 'cover' }} />
                 </div>
@@ -177,7 +177,7 @@ export default function Productos() {
 
       {/* BENEFICIOS */}
       <section className="section-white">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <div style={{ textAlign: 'center', marginBottom: '48px' }}>
             <span className="section-eyebrow">Nutrición</span>
             <h2 className="section-title">¿Por qué consumir huevos?</h2>
@@ -185,7 +185,7 @@ export default function Productos() {
           </div>
           <div className="grid-4">
             {beneficios.map((b, i) => (
-              <div key={i} className="card-wp" style={{ textAlign: 'center' }}>
+              <div key={i} className="card-wp" data-aos="fade-up" data-aos-delay={i * 100} style={{ textAlign: 'center' }}>
                 <div style={{ marginBottom: '16px', display: 'flex', justifyContent: 'center' }}>{b.icon}</div>
                 <h3 style={{ fontWeight: 800, fontSize: '1rem', textTransform: 'uppercase', marginBottom: '12px' }}>{b.title}</h3>
                 <p style={{ fontSize: '0.875rem', color: 'var(--fg-muted)', lineHeight: 1.65, margin: 0 }}>{b.desc}</p>
@@ -197,7 +197,7 @@ export default function Productos() {
 
       {/* CONSERVACIÓN */}
       <section className="section-gray">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
             <div>
               <span className="section-eyebrow">Tips de almacenamiento</span>
@@ -229,7 +229,7 @@ export default function Productos() {
 
       {/* CTA */}
       <section className="cta-strip">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '2rem', textTransform: 'uppercase', marginBottom: '16px' }}>
             ¿Listo para hacer tu pedido?
           </h2>

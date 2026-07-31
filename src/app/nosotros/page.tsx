@@ -22,12 +22,12 @@ export default function Nosotros() {
       {/* HERO PAGE */}
       <section className="hero-page" style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/img_nosotros.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container-wp">
-          <span className="section-eyebrow">Huevitos Express</span>
-          <h1 style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
+          <span className="section-eyebrow" data-aos="fade-right">Huevitos Express</span>
+          <h1 data-aos="fade-right" style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
             Nuestra historia
           </h1>
           <div style={{ width: '48px', height: '4px', background: 'var(--brand-yellow)', marginBottom: '20px' }}></div>
-          <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', maxWidth: '640px', lineHeight: 1.7 }}>
+          <p data-aos="fade-right" style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', maxWidth: '640px', lineHeight: 1.7 }}>
             Una marca nacida del compromiso familiar con la calidad avícola, dedicada a llevar huevos frescos a los hogares y negocios de Guayaquil.
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function Nosotros() {
 
       {/* HISTORIA */}
       <section className="section-white">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <div className="grid-2" style={{ gap: '64px', alignItems: 'stretch' }}>
             <div style={{ position: 'relative', height: '100%', minHeight: '300px', border: '4px solid var(--brand-green)' }}>
               <Image
@@ -65,7 +65,7 @@ export default function Nosotros() {
 
       {/* NUESTRA EXPERIENCIA */}
       <section className="section-gray">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <div className="grid-2-1" style={{ gap: '64px', alignItems: 'center' }}>
             <div>
               <span className="section-eyebrow">Respaldo familiar</span>
@@ -107,7 +107,7 @@ export default function Nosotros() {
 
       {/* MISIÓN Y VISIÓN */}
       <section className="section-white">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <div style={{ textAlign: 'center', marginBottom: '48px' }}>
             <span className="section-eyebrow">Propósito</span>
             <h2 className="section-title">Misión y Visión</h2>
@@ -138,7 +138,7 @@ export default function Nosotros() {
 
       {/* VALORES */}
       <section className="section-gray">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <div style={{ textAlign: 'center', marginBottom: '48px' }}>
             <span className="section-eyebrow">Lo que nos define</span>
             <h2 className="section-title">Nuestros valores</h2>
@@ -146,7 +146,7 @@ export default function Nosotros() {
           </div>
           <div className="grid-4">
             {valores.map((v, i) => (
-              <div key={i} className="card-wp" style={{ textAlign: 'center' }}>
+              <div key={i} className="card-wp" data-aos="fade-up" data-aos-delay={i * 100} style={{ textAlign: 'center' }}>
                 <div style={{ display: 'flex', justifyContent: 'center', fontSize: '2.5rem', marginBottom: '16px' }}>{v.icon}</div>
                 <h3 style={{ fontWeight: 800, fontSize: '1rem', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '12px' }}>{v.title}</h3>
                 <p style={{ fontSize: '0.875rem', color: 'var(--fg-muted)', lineHeight: 1.65, margin: 0 }}>{v.desc}</p>
@@ -158,7 +158,7 @@ export default function Nosotros() {
 
       {/* NUESTRO COMPROMISO */}
       <section className="section-dark">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
             <div>
               <span className="section-eyebrow" style={{ background: 'rgba(247,217,30,0.2)', color: '#F7D91E' }}>Nuestro compromiso</span>
@@ -195,7 +195,7 @@ export default function Nosotros() {
 
       {/* CTA */}
       <section className="cta-strip">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '2rem', textTransform: 'uppercase', marginBottom: '16px' }}>
             Conoce nuestros productos
           </h2>

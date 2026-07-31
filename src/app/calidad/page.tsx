@@ -50,12 +50,12 @@ export default function Calidad() {
       {/* HERO */}
       <section className="hero-page" style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/img_calidad.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container-wp">
-          <span className="section-eyebrow">Estándares de calidad</span>
-          <h1 style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
+          <span className="section-eyebrow" data-aos="fade-right">Estándares de calidad</span>
+          <h1 data-aos="fade-right" style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
             Comprometidos con la calidad
           </h1>
           <div style={{ width: '48px', height: '4px', background: 'var(--brand-yellow)', marginBottom: '20px' }}></div>
-          <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', maxWidth: '640px', lineHeight: 1.7 }}>
+          <p data-aos="fade-right" style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', maxWidth: '640px', lineHeight: 1.7 }}>
             En Huevitos Express la calidad no es una promesa vacía. Es el resultado de un proceso riguroso que acompaña cada huevo desde su selección hasta la entrega en tu puerta.
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function Calidad() {
 
       {/* INTRO STATEMENT */}
       <section className="section-white">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
             <span className="section-eyebrow">Nuestro enfoque</span>
             <h2 className="section-title" style={{ margin: '12px 0' }}>Calidad en cada etapa</h2>
@@ -78,7 +78,7 @@ export default function Calidad() {
       {/* LAS 4 ETAPAS */}
       {etapas.map((etapa, i) => (
         <section key={i} className={i % 2 === 0 ? "section-gray" : "section-white"}>
-          <div className="container-wp">
+          <div className="container-wp" data-aos="fade-up">
             <div className={i % 2 === 0 ? "grid-1-2" : "grid-2-1"} style={{ gap: '64px', alignItems: 'stretch' }}>
               {i % 2 === 0 ? (
                 <>
@@ -154,7 +154,7 @@ export default function Calidad() {
 
       {/* COMPROMISO INSTITUCIONAL */}
       <section className="section-dark">
-        <div className="container-wp" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+        <div className="container-wp" data-aos="fade-up" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
           <span className="section-eyebrow" style={{ background: 'rgba(247,217,30,0.2)', color: '#F7D91E' }}>Compromiso institucional</span>
           <h2 className="section-title-white" style={{ marginTop: '12px', marginBottom: '24px' }}>Nuestra promesa de calidad</h2>
           <div style={{ width: '48px', height: '4px', background: 'var(--brand-yellow)', margin: '0 auto 32px' }}></div>

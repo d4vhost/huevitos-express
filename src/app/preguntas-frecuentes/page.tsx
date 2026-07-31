@@ -72,12 +72,12 @@ export default function PreguntasFrecuentes() {
       {/* HERO */}
       <section className="hero-page" style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/img_faq.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container-wp">
-          <span className="section-eyebrow">Resolvemos tus dudas</span>
-          <h1 style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
+          <span className="section-eyebrow" data-aos="fade-right">Resolvemos tus dudas</span>
+          <h1 data-aos="fade-right" style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
             Preguntas frecuentes
           </h1>
           <div style={{ width: '48px', height: '4px', background: 'var(--brand-yellow)', marginBottom: '20px' }}></div>
-          <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', maxWidth: '640px', lineHeight: 1.7 }}>
+          <p data-aos="fade-right" style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', maxWidth: '640px', lineHeight: 1.7 }}>
             Aquí encontrarás respuesta a las preguntas más comunes sobre nuestros productos, pedidos, conservación y distribución.
           </p>
         </div>
@@ -85,7 +85,7 @@ export default function PreguntasFrecuentes() {
 
       {/* FAQS */}
       <section className="section-gray">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <div className="grid-sidebar-left" style={{ gap: '56px', alignItems: 'start' }}>
 
             {/* Sidebar */}

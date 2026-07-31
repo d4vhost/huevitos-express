@@ -73,12 +73,12 @@ export default function Blog() {
       {/* HERO */}
       <section className="hero-page" style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/img_blog.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container-wp">
-          <span className="section-eyebrow">Contenido educativo</span>
-          <h1 style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
+          <span className="section-eyebrow" data-aos="fade-right">Contenido educativo</span>
+          <h1 data-aos="fade-right" style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
             Blog
           </h1>
           <div style={{ width: '48px', height: '4px', background: 'var(--brand-yellow)', marginBottom: '20px' }}></div>
-          <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', maxWidth: '640px', lineHeight: 1.7 }}>
+          <p data-aos="fade-right" style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', maxWidth: '640px', lineHeight: 1.7 }}>
             Consejos, recetas, curiosidades y todo lo que necesitas saber sobre los huevos frescos para sacarles el máximo provecho.
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function Blog() {
 
       {/* BLOG GRID */}
       <section className="section-gray">
-        <div className="container-wp">
+        <div className="container-wp" data-aos="fade-up">
           <div className="grid-sidebar-right" style={{ gap: '48px', alignItems: 'start' }}>
 
             {/* Artículos */}
@@ -121,7 +121,7 @@ export default function Blog() {
               {/* Resto de artículos */}
               <div className="grid-2">
                 {articulos.slice(1).map((art, i) => (
-                  <div key={i} className="blog-card">
+                  <div key={i} className="blog-card" data-aos="fade-up" data-aos-delay={i * 100}>
                     <div style={{ position: 'relative', height: '180px' }}>
                       <Image src={art.img} alt={art.titulo} fill style={{ objectFit: 'cover' }} />
                     </div>
