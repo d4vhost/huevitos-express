@@ -71,7 +71,7 @@ export default function Productos() {
     <div>
 
       {/* HERO */}
-      <section className="hero-page">
+      <section className="hero-page" style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/img_productos.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container-wp">
           <span className="section-eyebrow">Catálogo</span>
           <h1 style={{ color: '#fff', fontWeight: 900, fontSize: '2.75rem', textTransform: 'uppercase', marginBottom: '16px', marginTop: '12px' }}>
