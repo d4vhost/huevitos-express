@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, ChevronUp, MessageCircle } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const faqs = [
   {
@@ -163,18 +163,7 @@ export default function FAQ() {
             Estamos disponibles por WhatsApp para responderte en el menor tiempo posible.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a
-              href="https://wa.me/593999999999"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-yellow"
-              id="faq-cta-whatsapp"
-              style={{ fontSize: '1.05rem', padding: '16px 36px', display: 'inline-flex', alignItems: 'center', gap: '10px' }}
-            >
-              <MessageCircle size={18} />
-              Hablar por WhatsApp
-            </a>
-            <Link href="/contacto" className="btn-white" id="faq-cta-contacto" style={{ fontSize: '1.05rem', padding: '16px 36px' }}>
+            <Link href="/contacto" className="btn-yellow" id="faq-cta-contacto" style={{ fontSize: '1.05rem', padding: '16px 36px', color: '#1a1a1a' }}>
               Ver formas de contacto
             </Link>
           </div>
