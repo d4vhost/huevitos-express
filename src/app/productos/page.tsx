@@ -244,7 +244,6 @@ export default function Productos() {
             id="productos-cta-pedido"
             style={{ fontSize: '1.05rem', padding: '16px 36px' }}
           >
-            <MessageCircle size={18} style={{ marginRight: '8px' }} />
             Solicitar pedido por WhatsApp
           </a>
         </div>
