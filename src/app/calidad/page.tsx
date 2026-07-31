@@ -14,7 +14,8 @@ const etapas = [
     titulo: "Selección",
     icon: <Search size={32} color="#fff" style={{ marginBottom: '8px' }} />,
     desc: "Cada huevo es revisado individualmente antes de su distribución. Descartamos cualquier producto que no cumpla con nuestros estándares de frescura, tamaño y estado de la cáscara. Solo los mejores huevos continúan al siguiente paso.",
-    detalle: ["Revisión visual de la cáscara", "Verificación de integridad", "Control de frescura", "Descarte de piezas irregulares"],
+    detalle: ["Revisión visual de la cáscara", "Control de frescura", "Verificación de integridad", "Descarte de piezas irregulares"],
+    bgImage: "https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?auto=format&fit=crop&q=80&w=800"
   },
   {
     num: "02",
@@ -22,6 +23,7 @@ const etapas = [
     icon: <Layers size={32} color="#fff" style={{ marginBottom: '8px' }} />,
     desc: "Una vez seleccionados, los huevos son organizados por tamaño y presentación. Este proceso garantiza que cada cubeta, cartón o docena tenga uniformidad en el producto que recibes.",
     detalle: ["Clasificación por tamaño", "Agrupación por presentación", "Control de uniformidad", "Registro de lotes"],
+    bgImage: "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&q=80&w=800"
   },
   {
     num: "03",
@@ -29,6 +31,7 @@ const etapas = [
     icon: <Box size={32} color="#fff" style={{ marginBottom: '8px' }} />,
     desc: "El empaque protege el producto durante el transporte y preserva su frescura. Utilizamos empaques adecuados para cada presentación que minimizan el riesgo de rotura y mantienen las condiciones óptimas del huevo.",
     detalle: ["Empaque protector", "Cubetas resistentes", "Cartones individuales", "Etiquetado correcto"],
+    bgImage: "https://images.unsplash.com/photo-1589363460779-cb704ec32b90?auto=format&fit=crop&q=80&w=800"
   },
   {
     num: "04",
@@ -36,6 +39,7 @@ const etapas = [
     icon: <Truck size={32} color="#fff" style={{ marginBottom: '8px' }} />,
     desc: "La última etapa es la más importante: llevar el producto fresco hasta el cliente. Mantenemos condiciones adecuadas durante el transporte para que los huevos lleguen en perfectas condiciones, sin importar el volumen del pedido.",
     detalle: ["Transporte cuidadoso", "Cadena de frescura", "Entregas puntuales", "Cobertura en Guayaquil"],
+    bgImage: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&q=80&w=800"
   },
 ];
 
@@ -82,7 +86,7 @@ export default function Calidad() {
                   <div style={{ textAlign: 'center', height: '100%' }}>
                     <div style={{
                       width: '100%', height: '100%',
-                      background: 'var(--brand-green)',
+                      background: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(${etapa.bgImage}) center/cover no-repeat`,
                       display: 'flex', flexDirection: 'column',
                       alignItems: 'center', justifyContent: 'center',
                       border: '6px solid var(--brand-yellow)'
@@ -132,7 +136,7 @@ export default function Calidad() {
                   <div style={{ textAlign: 'center', height: '100%' }}>
                     <div style={{
                       width: '100%', height: '100%',
-                      background: 'var(--brand-green)',
+                      background: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(${etapa.bgImage}) center/cover no-repeat`,
                       display: 'flex', flexDirection: 'column',
                       alignItems: 'center', justifyContent: 'center',
                       border: '6px solid var(--brand-yellow)'
