@@ -624,8 +624,19 @@ p {
   }
 
   /* Gap override for grids with inline gap */
-  .grid-2[style*="gap: 64px"] {
+  .grid-2[style*="gap: 64px"],
+  .grid-1-2[style*="gap: 64px"],
+  .grid-2-1[style*="gap: 64px"],
+  .grid-sidebar-right[style*="gap: 64px"],
+  .grid-sidebar-left[style*="gap: 56px"] {
     gap: 32px !important;
+  }
+
+  /* Ticker smaller on mobile */
+  .ticker-item {
+    font-size: 0.65rem;
+    padding: 0 18px;
+    letter-spacing: 1px;
   }
 }
 
