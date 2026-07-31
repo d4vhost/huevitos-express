@@ -570,7 +570,7 @@ p {
   .hamburger { display: flex !important; }
 
   /* Hero */
-  .hero-wp { min-height: calc(100vh - 100px); min-height: calc(100svh - 100px); padding: 60px 0; }
+  .hero-wp { min-height: calc(100vh - 100px); min-height: calc(100dvh - 70px); padding: 60px 0; }
   .hero-wp h1 { font-size: 2rem !important; }
   .hero-wp p { font-size: 0.95rem !important; }
 
@@ -642,7 +642,7 @@ p {
 }
 
 @media (max-width: 480px) {
-  .hero-wp { min-height: calc(100vh - 90px); min-height: calc(100svh - 90px); padding: 40px 0; }
+  .hero-wp { min-height: calc(100vh - 90px); min-height: calc(100dvh - 60px); padding: 40px 0; }
   .hero-wp h1 { font-size: 1.65rem !important; }
   .hero-wp p { font-size: 0.9rem !important; }
 
