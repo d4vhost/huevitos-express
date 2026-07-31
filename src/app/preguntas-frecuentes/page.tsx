@@ -155,22 +155,7 @@ export default function PreguntasFrecuentes() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="cta-strip">
-        <div className="container-wp" style={{ textAlign: 'center' }}>
-          <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '2rem', textTransform: 'uppercase', marginBottom: '16px' }}>
-            ¿Tienes otra pregunta?
-          </h2>
-          <p style={{ color: 'rgba(255,255,255,0.85)', maxWidth: '480px', margin: '0 auto 32px' }}>
-            Estamos disponibles por WhatsApp para responderte en el menor tiempo posible.
-          </p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/contacto" className="btn-yellow" id="faq-cta-contacto" style={{ fontSize: '1.05rem', padding: '16px 36px', color: '#1a1a1a' }}>
-              Ver formas de contacto
-            </Link>
-          </div>
-        </div>
-      </section>
+
 
     </div>
   );
