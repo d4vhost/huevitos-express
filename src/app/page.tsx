@@ -234,7 +234,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                  <div className="icon-box" style={{ width: '40px', height: '40px', fontSize: '1rem', background: 'var(--brand-orange)' }}>
+                  <div className="icon-box" style={{ width: '40px', height: '40px', fontSize: '1rem' }}>
                     <Egg size={18} color="#fff" />
                   </div>
                   <div>
