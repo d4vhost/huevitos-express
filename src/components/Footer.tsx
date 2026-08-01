@@ -20,7 +20,7 @@ export default function Footer() {
                     alt="Huevitos Express"
                     width={64}
                     height={64}
-                    style={{ objectFit: 'cover', display: 'block', width: '100%', height: '100%' }}
+                    style={{ objectFit: 'contain', display: 'block', width: '100%', height: '100%' }}
                   />
                 </div>
               </div>
