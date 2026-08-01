@@ -105,7 +105,7 @@ export default function Home() {
                 Ver productos
               </Link>
               <a
-                href="https://wa.me/593999999999?text=Hola,%20quiero%20hacer%20un%20pedido%20de%20huevos%20frescos"
+                href="https://wa.me/593995489413?text=Hola,%20quiero%20hacer%20un%20pedido%20de%20huevos%20frescos"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp"
@@ -324,7 +324,7 @@ export default function Home() {
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a
-              href="https://wa.me/593999999999?text=Hola,%20quiero%20hacer%20un%20pedido"
+              href="https://wa.me/593995489413?text=Hola,%20quiero%20hacer%20un%20pedido"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-yellow"

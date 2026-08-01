@@ -99,7 +99,7 @@ export default function Productos() {
                 Todos nuestros productos pasan por un proceso de selección y clasificación antes de llegar a tus manos, garantizando frescura y calidad en cada presentación.
               </p>
               <a
-                href="https://wa.me/593999999999?text=Hola,%20quiero%20consultar%20precios%20de%20huevos"
+                href="https://wa.me/593995489413?text=Hola,%20quiero%20consultar%20precios%20de%20huevos"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp"
@@ -159,7 +159,7 @@ export default function Productos() {
                     </div>
                   </div>
                   <a
-                    href={`https://wa.me/593999999999?text=Hola,%20quiero%20pedir%20${encodeURIComponent(p.nombre)}`}
+                    href={`https://wa.me/593995489413?text=Hola,%20quiero%20pedir%20${encodeURIComponent(p.nombre)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary"
@@ -237,7 +237,7 @@ export default function Productos() {
             Contáctanos por WhatsApp y te asesoramos para encontrar la presentación ideal para ti.
           </p>
           <a
-            href="https://wa.me/593999999999?text=Hola,%20quiero%20solicitar%20un%20pedido%20de%20huevos"
+            href="https://wa.me/593995489413?text=Hola,%20quiero%20solicitar%20un%20pedido%20de%20huevos"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-yellow"

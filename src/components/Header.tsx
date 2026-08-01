@@ -47,7 +47,7 @@ export default function Header() {
             </Link>
           ))}
           <a
-            href="https://wa.me/593999999999?text=Hola,%20me%20interesa%20hacer%20un%20pedido%20de%20Huevitos%20Express"
+            href="https://wa.me/593995489413?text=Hola,%20me%20interesa%20hacer%20un%20pedido%20de%20Huevitos%20Express"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-yellow"
@@ -92,7 +92,7 @@ export default function Header() {
           </Link>
         ))}
         <a
-          href="https://wa.me/593999999999"
+          href="https://wa.me/593995489413"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-yellow"

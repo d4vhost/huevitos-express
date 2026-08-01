@@ -28,7 +28,7 @@ export default function Footer() {
                 Huevitos Express — una marca respaldada por la experiencia de la familia Uzcátegui en el sector avícola.
               </p>
               <div style={{ display: 'flex', gap: '10px' }}>
-                <a href="#" aria-label="Facebook"
+                <a href="https://www.facebook.com/huevitosfoodtruck/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
                   style={{ width: '34px', height: '34px', background: 'var(--brand-green)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', textDecoration: 'none', fontSize: '0.85rem' }}>
                   <i className="fa-brands fa-facebook-f"></i>
                 </a>
@@ -36,7 +36,7 @@ export default function Footer() {
                   style={{ width: '34px', height: '34px', background: 'var(--brand-green)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', textDecoration: 'none', fontSize: '0.85rem' }}>
                   <i className="fa-brands fa-instagram"></i>
                 </a>
-                <a href="https://wa.me/593999999999" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+                <a href="https://wa.me/593995489413" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
                   style={{ width: '34px', height: '34px', background: '#25D366', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', textDecoration: 'none', fontSize: '0.85rem' }}>
                   <i className="fa-brands fa-whatsapp"></i>
                 </a>
@@ -79,8 +79,8 @@ export default function Footer() {
                 </li>
                 <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
                   <Phone size={16} color="var(--brand-green)" style={{ flexShrink: 0 }} />
-                  <a href="https://wa.me/593999999999" style={{ color: '#aaa', textDecoration: 'none', fontSize: '0.875rem' }}>
-                    +593 99 999 9999
+                  <a href="https://wa.me/593995489413" style={{ color: '#aaa', textDecoration: 'none', fontSize: '0.875rem' }}>
+                    +593 99 548 9413
                   </a>
                 </li>
                 <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>

@@ -47,7 +47,7 @@ export default function Contacto() {
         <div className="container-wp">
           <div className="grid-4" style={{ gap: '24px' }}>
             {[
-              { icon: <MessageCircle size={24} color="#25D366" />, titulo: 'WhatsApp', valor: '+593 99 999 9999', sub: 'Respuesta rápida', link: 'https://wa.me/593999999999' },
+              { icon: <MessageCircle size={24} color="#25D366" />, titulo: 'WhatsApp', valor: '+593 99 548 9413', sub: 'Respuesta rápida', link: 'https://wa.me/593995489413' },
               { icon: <Mail size={24} color="var(--brand-green)" />, titulo: 'Correo', valor: 'info@huevitosexpress.com', sub: 'Respuesta en 24h', link: 'mailto:info@huevitosexpress.com' },
               { icon: <MapPin size={24} color="var(--brand-green)" />, titulo: 'Dirección', valor: 'Guayaquil, Ecuador', sub: 'Sede principal', link: null },
               { icon: <Clock size={24} color="var(--brand-green)" />, titulo: 'Horarios', valor: 'Lun – Sáb', sub: '7:00 AM – 6:00 PM', link: null },
@@ -91,7 +91,7 @@ export default function Contacto() {
                   <h3 style={{ fontWeight: 800, textTransform: 'uppercase', marginBottom: '8px' }}>¡Mensaje enviado!</h3>
                   <p style={{ color: 'var(--fg-muted)' }}>Gracias por contactarnos. Te responderemos a la brevedad. También puedes escribirnos directamente por WhatsApp para una respuesta más rápida.</p>
                   <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', marginTop: '24px', flexWrap: 'wrap' }}>
-                    <a href="https://wa.me/593999999999" target="_blank" rel="noopener noreferrer" className="btn-whatsapp" id="contacto-whatsapp-enviado">
+                    <a href="https://wa.me/593995489413" target="_blank" rel="noopener noreferrer" className="btn-whatsapp" id="contacto-whatsapp-enviado">
                       <MessageCircle size={16} />
                       Contactar por WhatsApp
                     </a>
@@ -152,9 +152,9 @@ export default function Contacto() {
               <div className="section-divider"></div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '32px' }}>
                 {[
-                  { icon: <Globe size={18} color="#fff" />, label: 'Facebook', handle: '@HuevitosExpress', link: '#', color: '#1877F2' },
+                  { icon: <Globe size={18} color="#fff" />, label: 'Facebook', handle: '@huevitosfoodtruck', link: 'https://www.facebook.com/huevitosfoodtruck/', color: '#1877F2' },
                   { icon: <AtSign size={18} color="#fff" />, label: 'Instagram', handle: '@huevitosexpress', link: '#', color: '#E4405F' },
-                  { icon: <Phone size={18} color="#fff" />, label: 'WhatsApp', handle: '+593 99 999 9999', link: 'https://wa.me/593999999999', color: '#25D366' },
+                  { icon: <Phone size={18} color="#fff" />, label: 'WhatsApp', handle: '+593 99 548 9413', link: 'https://wa.me/593995489413', color: '#25D366' },
                 ].map((red, i) => (
                   <a key={i} href={red.link} target="_blank" rel="noopener noreferrer"
                     style={{ display: 'flex', gap: '14px', alignItems: 'center', padding: '16px', background: 'var(--bg-alt)', border: '1px solid var(--border)', textDecoration: 'none' }}
@@ -173,7 +173,7 @@ export default function Contacto() {
               <div style={{ background: 'var(--brand-green)', padding: '24px' }}>
                 <h3 style={{ color: '#fff', fontWeight: 800, fontSize: '0.95rem', textTransform: 'uppercase', marginBottom: '12px' }}>Respuesta inmediata</h3>
                 <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.875rem', marginBottom: '16px', lineHeight: 1.6 }}>Para pedidos urgentes, la forma más rápida es WhatsApp.</p>
-                <a href="https://wa.me/593999999999" target="_blank" rel="noopener noreferrer" className="btn-yellow" style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }} id="contacto-cta-wa">
+                <a href="https://wa.me/593995489413" target="_blank" rel="noopener noreferrer" className="btn-yellow" style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }} id="contacto-cta-wa">
                   <MessageCircle size={16} />
                   Abrir WhatsApp
                 </a>
