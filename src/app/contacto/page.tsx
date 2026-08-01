@@ -191,10 +191,24 @@ export default function Contacto() {
             <span className="section-eyebrow">Dónde estamos</span>
             <h2 className="section-title">Sede en Guayaquil</h2>
             <div className="section-divider" style={{ margin: '16px auto 0' }}></div>
-          </div>
-          <div style={{ width: '100%', height: '400px', border: '4px solid var(--brand-green)', overflow: 'hidden' }}>
+          <div style={{ width: '100%', height: '400px', border: '4px solid var(--brand-green)', overflow: 'hidden', position: 'relative' }}>
+            {/* Custom Native-Looking Place Card */}
+            <div style={{ position: 'absolute', top: '10px', left: '10px', background: '#fff', padding: '12px 16px', borderRadius: '2px', boxShadow: 'rgba(0, 0, 0, 0.3) 0px 1px 4px -1px', zIndex: 10, display: 'flex', alignItems: 'center', gap: '24px', minWidth: '280px', fontFamily: 'Roboto, Arial, sans-serif' }}>
+              <div style={{ flex: 1 }}>
+                <div style={{ fontWeight: 500, fontSize: '14px', color: '#1a73e8', marginBottom: '2px', whiteSpace: 'nowrap' }}>Huevitos Express</div>
+                <div style={{ fontSize: '12px', color: '#555', whiteSpace: 'nowrap' }}>Sede Guayaquil</div>
+              </div>
+              <div style={{ display: 'flex', gap: '8px' }}>
+                <a href="https://www.google.com/maps/dir//-2.19394,-79.88697" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '36px', height: '36px', borderRadius: '50%', background: '#f1f3f4', transition: 'background 0.2s', textDecoration: 'none' }} title="Cómo llegar" onMouseOver={(e) => e.currentTarget.style.background = '#e8eaed'} onMouseOut={(e) => e.currentTarget.style.background = '#f1f3f4'}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a73e8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+                </a>
+                <a href="https://maps.google.com/?q=-2.19394,-79.88697" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '36px', height: '36px', borderRadius: '50%', background: '#f1f3f4', transition: 'background 0.2s', textDecoration: 'none' }} title="Ver el mapa más grande" onMouseOver={(e) => e.currentTarget.style.background = '#e8eaed'} onMouseOut={(e) => e.currentTarget.style.background = '#f1f3f4'}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a73e8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
             <iframe
-              src="https://maps.google.com/maps?q=-2.19394,-79.88697+(Huevitos%20Express)&t=&z=17&ie=UTF8&iwloc=B&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1500!2d-79.88697!3d-2.19394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwMTEnMzguMiJTIDc5wrA1MycxMy4xIlc!5e0!3m2!1ses!2sec!4v1720000000000!5m2!1ses!2sec"
               width="100%"
               height="100%"
               style={{ border: 0, display: 'block' }}
