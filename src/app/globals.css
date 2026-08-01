@@ -428,7 +428,7 @@ p {
   width: 52px;
   height: 52px;
   overflow: hidden;
-  border: 3px solid var(--brand-yellow);
+  border-radius: 8px;
   background: #fff;
   display: flex;
   align-items: center;
