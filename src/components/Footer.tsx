@@ -105,7 +105,7 @@ export default function Footer() {
                 Nuestra trayectoria en el sector avícola con la familia Uzcátegui garantiza cada huevo que llega a tu mesa.
               </p>
               <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-                <div style={{ background: '#fff', padding: '6px', borderRadius: '8px', overflow: 'hidden' }}>
+                <div style={{ background: '#fff', padding: '6px' }}>
                   <Image
                     src="/logo_abu.jpeg"
                     alt="A.B.U."
@@ -114,7 +114,7 @@ export default function Footer() {
                     style={{ objectFit: 'contain', display: 'block', width: 'auto', height: '32px' }}
                   />
                 </div>
-                <div style={{ background: '#fff', padding: '6px', borderRadius: '8px', overflow: 'hidden' }}>
+                <div style={{ background: '#fff', padding: '6px' }}>
                   <Image
                     src="/logo_grupouzcategui.jpeg"
                     alt="Grupo Uzcátegui"
