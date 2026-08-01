@@ -394,8 +394,8 @@ p {
    ============================================= */
 .hero-wp {
   position: relative;
-  min-height: calc(100vh - 110px);
-  min-height: calc(100svh - 110px);
+  min-height: calc(100vh - 160px);
+  min-height: calc(100svh - 160px);
   display: flex;
   align-items: center;
   overflow: hidden;
