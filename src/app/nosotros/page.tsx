@@ -37,13 +37,12 @@ export default function Nosotros() {
       <section className="section-white">
         <div className="container-wp">
           <div className="grid-2" style={{ gap: '64px', alignItems: 'stretch' }}>
-            <div style={{ border: '4px solid var(--brand-green)', display: 'flex', justifyContent: 'center', backgroundColor: '#8bc34a' }}>
+            <div style={{ position: 'relative', height: '100%', minHeight: '300px', border: '4px solid var(--brand-green)' }} className="nosotros-logo-container">
               <Image
                 src="/logo_huevos.jpg"
                 alt="Historia de Huevitos Express"
-                width={800}
-                height={1000}
-                style={{ width: '100%', height: 'auto', display: 'block' }}
+                fill
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
               />
             </div>
             <div>

@@ -600,6 +600,11 @@ p {
     object-position: center !important;
   }
 
+  .nosotros-logo-container {
+    height: auto !important;
+    aspect-ratio: 3/4;
+  }
+
   /* Feature grid inside ABU section */
   .features-mini-grid {
     grid-template-columns: 1fr !important;
