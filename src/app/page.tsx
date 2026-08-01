@@ -183,7 +183,7 @@ export default function Home() {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Ubicación Huevitos Express - Guayaquil"
               ></iframe>
-              <div className="image-overlap-badge" style={{ position: 'absolute', bottom: '0', left: '0', background: 'var(--brand-green)', color: '#fff', padding: '20px 28px', fontWeight: 800, fontSize: '1.1rem', textTransform: 'uppercase', zIndex: 1 }}>
+              <div className="image-overlap-badge" style={{ position: 'absolute', bottom: '0', left: '0', background: 'var(--brand-green)', color: '#fff', padding: '10px 20px', fontWeight: 800, fontSize: '0.9rem', textTransform: 'uppercase', zIndex: 1 }}>
                 Sede Guayaquil
               </div>
             </div>
