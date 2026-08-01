@@ -192,20 +192,17 @@ export default function Contacto() {
             <h2 className="section-title">Sede en Guayaquil</h2>
             <div className="section-divider" style={{ margin: '16px auto 0' }}></div>
           </div>
-          <div style={{ width: '100%', height: '400px', border: '4px solid var(--brand-green)', overflow: 'hidden', position: 'relative' }}>
+          <div style={{ width: '100%', height: '400px', border: '4px solid var(--brand-green)', overflow: 'hidden' }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1500!2d-79.88697!3d-2.19394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwMTEnMzguMiJTIDc5wrA1MycxMy4xIlc!5e0!3m2!1ses!2sec!4v1720000000000!5m2!1ses!2sec"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.35693896645!2d-80.09803093168997!3d-2.1701754055994256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13f31c0001f5%3A0x4e7a9a2ffb98df63!2sGuayaquil!5e0!3m2!1ses!2sec!4v1720000000000!5m2!1ses!2sec"
               width="100%"
               height="100%"
               style={{ border: 0, display: 'block' }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación Huevitos Express - Guayaquil"
+              title="Ubicación Guayaquil"
             ></iframe>
-            <a href="https://maps.google.com/?q=-2.19394,-79.88697" target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', top: '16px', right: '16px', background: '#fff', color: 'var(--brand-green)', padding: '8px 16px', borderRadius: '4px', fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none', boxShadow: '0 4px 12px rgba(0,0,0,0.15)', zIndex: 1, display: 'flex', alignItems: 'center', gap: '8px' }}>
-              Ver en Google Maps
-            </a>
           </div>
 
         </div>
