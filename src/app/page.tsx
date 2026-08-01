@@ -27,20 +27,20 @@ const faqs = [
 const productos = [
   {
     img: "/producto_cubeta.jpg",
-    nombre: "Cubeta de Huevos",
-    desc: "30 huevos frescos seleccionados, empacados con cuidado para proteger su calidad durante el transporte.",
+    nombre: "Cubeta de Huevos de Codorniz",
+    desc: "Huevos de codorniz frescos seleccionados, empacados con cuidado para proteger su calidad durante el transporte.",
     precio: "Consultar precio",
   },
   {
     img: "/producto_carton.jpg",
-    nombre: "Cartón de Huevos",
-    desc: "12 huevos frescos en cartón, ideal para hogares y consumo familiar diario.",
+    nombre: "Cartón de Huevos de Codorniz",
+    desc: "Huevos de codorniz frescos en cartón, ideal para hogares y consumo familiar diario.",
     precio: "Consultar precio",
   },
   {
-    img: "/hero_huevos.jpg",
-    nombre: "Docena Premium",
-    desc: "12 huevos frescos de primera calidad, perfectos para el día a día en tu hogar.",
+    img: "/docena_premium.jpg",
+    nombre: "Huevos Naturales Variados",
+    desc: "Selección premium de huevos naturales de codorniz y huevos de color, frescos y de primera calidad.",
     precio: "Consultar precio",
   },
 ];
@@ -80,7 +80,7 @@ export default function Home() {
       <section className="hero-wp">
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <Image
-            src="/hero_huevos.jpg"
+            src="/img_inicio.jpg"
             alt="Huevos frescos Huevitos Express"
             fill
             sizes="100vw"
@@ -98,7 +98,7 @@ export default function Home() {
               a tu mesa.
             </h1>
             <p style={{ color: 'rgba(255,255,255,0.88)', fontSize: '1.1rem', lineHeight: 1.7, marginBottom: '36px', maxWidth: '560px' }}>
-              En Huevitos Express trabajamos para ofrecer huevos seleccionados, frescos y distribuidos con rapidez, respaldados por la experiencia de la familia Uzcátegui en el sector avícola.
+              En Huevitos Express trabajamos para ofrecer huevos de codorniz y huevos naturales de color, seleccionados, frescos y distribuidos con rapidez, respaldados por la experiencia de la familia Uzcátegui en el sector avícola.
             </p>
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Link href="/productos" className="btn-yellow" id="hero-ver-productos">
@@ -159,8 +159,8 @@ export default function Home() {
             </div>
             <div style={{ position: 'relative', height: '420px', border: '4px solid var(--brand-yellow)' }}>
               <Image
-                src="https://images.unsplash.com/photo-1569288052389-dac9b0ac9eac?q=80&w=1000&auto=format&fit=crop"
-                alt="Huevos frescos en granja"
+                src="https://images.unsplash.com/photo-1598965675045-45c5e72c7d05?q=80&w=1000&auto=format&fit=crop"
+                alt="Huevos de codorniz frescos"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}

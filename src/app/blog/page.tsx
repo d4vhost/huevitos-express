@@ -14,7 +14,7 @@ const articulos = [
     resumen: "El huevo es uno de los alimentos más completos de la naturaleza. Descubre por qué los nutricionistas lo recomiendan como parte de una dieta equilibrada.",
     categoria: "Nutrición",
     fecha: "20 de julio, 2026",
-    img: "/hero_huevos.jpg",
+    img: "/docena_premium.jpg",
     tiempo: "5 min",
   },
   {
@@ -41,7 +41,7 @@ const articulos = [
     resumen: "Rompe la rutina de los huevos fritos. Te traemos 10 recetas fáciles, rápidas y deliciosas para empezar el día con energía y proteína.",
     categoria: "Recetas",
     fecha: "5 de julio, 2026",
-    img: "/hero_huevos.jpg",
+    img: "/docena_premium.jpg",
     tiempo: "6 min",
   },
   {
@@ -59,7 +59,7 @@ const articulos = [
     resumen: "¿El huevo sube el colesterol? ¿Solo deberías comer la clara? Desmontamos los mitos más extendidos con base en la evidencia científica actual.",
     categoria: "Nutrición",
     fecha: "20 de junio, 2026",
-    img: "/hero_huevos.jpg",
+    img: "/docena_premium.jpg",
     tiempo: "5 min",
   },
 ];
