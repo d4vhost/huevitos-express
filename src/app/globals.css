@@ -593,7 +593,10 @@ p {
 
   /* ABU logo section on mobile */
   .abu-logo-mobile {
-    min-height: 220px !important;
+    min-height: 320px !important;
+  }
+  .abu-logo-mobile img {
+    object-position: center !important;
   }
 
   /* Feature grid inside ABU section */
@@ -666,7 +669,10 @@ p {
 
   /* ABU logo even smaller on small phones */
   .abu-logo-mobile {
-    min-height: 180px !important;
+    min-height: 300px !important;
+  }
+  .abu-logo-mobile img {
+    object-position: center !important;
   }
 
   /* Icon boxes slightly smaller */
