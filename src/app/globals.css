@@ -603,6 +603,8 @@ p {
   .nosotros-logo-container {
     height: auto !important;
     aspect-ratio: 3/4;
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   /* Feature grid inside ABU section */
