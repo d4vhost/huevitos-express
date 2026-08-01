@@ -191,6 +191,7 @@ export default function Contacto() {
             <span className="section-eyebrow">Dónde estamos</span>
             <h2 className="section-title">Sede en Guayaquil</h2>
             <div className="section-divider" style={{ margin: '16px auto 0' }}></div>
+          </div>
           <div style={{ width: '100%', height: '400px', border: '4px solid var(--brand-green)', overflow: 'hidden', position: 'relative' }}>
             {/* Custom Native-Looking Place Card */}
             <div style={{ position: 'absolute', top: '10px', left: '10px', background: '#fff', padding: '12px 16px', borderRadius: '2px', boxShadow: 'rgba(0, 0, 0, 0.3) 0px 1px 4px -1px', zIndex: 10, display: 'flex', alignItems: 'center', gap: '24px', minWidth: '280px', fontFamily: 'Roboto, Arial, sans-serif' }}>
