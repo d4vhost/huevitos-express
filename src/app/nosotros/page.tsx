@@ -42,7 +42,7 @@ export default function Nosotros() {
                 src="/logo_huevos.jpg"
                 alt="Historia de Huevitos Express"
                 fill
-                style={{ objectFit: 'cover', objectPosition: 'center 10%' }}
+                style={{ objectFit: 'cover', objectPosition: 'center 18%' }}
               />
             </div>
             <div>
