@@ -171,6 +171,9 @@ export default function Home() {
               <div className="image-overlap-badge" style={{ position: 'absolute', bottom: '0', left: '0', background: 'var(--brand-green)', color: '#fff', padding: '20px 28px', fontWeight: 800, fontSize: '1.1rem', textTransform: 'uppercase', zIndex: 1 }}>
                 Sede Guayaquil
               </div>
+              <a href="https://maps.google.com/?q=-2.19394,-79.88697" target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', top: '16px', right: '16px', background: '#fff', color: 'var(--brand-green)', padding: '8px 16px', borderRadius: '4px', fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none', boxShadow: '0 4px 12px rgba(0,0,0,0.15)', zIndex: 1, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                Ver en Google Maps
+              </a>
             </div>
           </div>
         </div>
